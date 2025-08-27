@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.7.30)  27 AUG 2025 04:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.7.30)  27 AUG 2025 11:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1119,44 +1119,53 @@ ut line 80.
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
-))
-Runaway argument?
-{figs/img.> \caption *{} \label {img} \end {figure} \end {document} 
-! File ended while scanning use of \beamer@@@includegraphics.
-<inserted text> 
-                \par 
-<*> main-slides.tex
-                   
-? 
+)
+<figs/img.png, id=22, 462.528pt x 346.896pt>
+File: figs/img.png Graphic file (type png)
+<use figs/img.png>
+Package pdftex.def Info: figs/img.png  used on input line 104.
+(pdftex.def)             Requested size: 239.60567pt x 179.70413pt.
 
-*
-(Please type a command or say `\end')
-*
-(Please type a command or say `\end')
-*\end
+[2
 
-*\end
-! Missing \endcsname inserted.
-<to be read again> 
-                   \end/ 
-<*> \end
-        
-? 
-! TeX capacity exceeded, sorry [input stack size=10000].
-\use_ii:nn #1#2->#2
-                   
-<*> \end
-        
-If you really absolutely need more capacity,
-you can ask a wizard to enlarge me.
+] [3 <./figs/img.png>]
+\tf@nav=\write6
+\openout6 = `main-slides.nav'.
 
- 
+\tf@toc=\write7
+\openout7 = `main-slides.toc'.
+
+\tf@snm=\write8
+\openout8 = `main-slides.snm'.
+
+ (./main-slides.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package rerunfilecheck Info: File `main-slides.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+ ) 
 Here is how much of TeX's memory you used:
- 26675 strings out of 476091
- 512401 string characters out of 5794081
- 1855330 words of memory out of 5000000
- 46530 multiletter control sequences out of 15000+600000
- 519331 words of font info for 57 fonts, out of 8000000 for 9000
+ 26706 strings out of 476091
+ 512882 string characters out of 5794081
+ 1860330 words of memory out of 5000000
+ 46550 multiletter control sequences out of 15000+600000
+ 519636 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 10000i,14n,10001p,405b,458s stack positions out of 10000i,1000n,20000p,200000b,200000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 128i,14n,131p,405b,636s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb>
+Output written on main-slides.pdf (3 pages, 98550 bytes).
+PDF statistics:
+ 83 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 500000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+
