@@ -1,0 +1,91 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\graphicspath{{./figs/}}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage{caption}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}     
+\usepackage{xparse}
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+%\newtheorem{theorem}{Theorem}[section]
+%\newtheorem{theorem}{Theorem}[section]
+%\newtheorem{problem}{Problem}
+%\newtheorem{proposition}{Proposition}[section]
+%\newtheorem{lemma}{Lemma}[section]
+%\newtheorem{corollary}[theorem]{Corollary}
+%\newtheorem{example}{Example}[section]
+%\newtheorem{definition}[problem]{Definition}
+
+\begin{document}
+
+%\textbf{\Large 1.6.16} \\
+%\textbf{\large AI25BTECH11001 - Abhisek Mohapatra} \\
+\title{1.8.11}
+\author{AI25BTECH11035 - SUJAL RAJANI}
+% \maketitle
+% \newpage
+% \bigskip
+%\begin{document}
+{\let\newpage\relax\maketitle}
+%\renewcommand{\thefigure}{\theenumi}
+%\renewcommand{\thetable}{\theenumi}
+% \newpage
+% \bigskip
+\textbf{Question}:
+\\
+\noindent AOBC is a rectangle whose three vertices are vertices \textbf{A}(0,3),\textbf{O}(0,0),\textbf{B}(5,0). The 
+length of diagonal is \underline{\hspace{2cm}}.
+\textbf{Solution:} 
+\\
+From the given information,
+\begin{align}
+			{A} = \myvec{0\\3},{O} = \myvec{0\\0},{B} = \myvec{5\\0} 
+\end{align}
+Then the length of the diagonal AB is :
+
+\begin{align}
+    A-B=\myvec{0\\3}-\myvec{5\\0}=\myvec{-5\\3},
+    \\
+    \\
+    (A-B)^T(A-B)=34
+    \end{align}
+    
+    Thus the desired distance is
+    
+    \begin{align}
+     \Rightarrow AB=||A-B||=\sqrt{34}	 
+    \end{align}
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.2\columnwidth]{figs/img.png}
+    \caption*{}
+    \label{img}
+\end{figure}
+\end{document}
