@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.7.30)  27 AUG 2025 12:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.7.30)  28 AUG 2025 17:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1239,13 +1239,13 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 4
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
-) (./main.aux)
+)
+No file main.aux.
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 46.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 46.
-
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
@@ -1366,14 +1366,13 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring OFF on input line 46.
- (./main.out)
-(./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 6
 4.
- (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyb on input line 6
@@ -1400,23 +1399,29 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 6
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-Runaway argument?
-{align \textbf {A} = \myvec {0\\3},\textbf {O} = \myvec {0\\0},\textbf \ETC.
-! Paragraph ended before \begin  was complete.
-<to be read again> 
-                   \par 
-l.72 
-     
+
+LaTeX Warning: File `figs/img.png' not found on input line 88.
+
+
+! Package pdftex.def Error: File `figs/img.png' not found: using draft setting.
+
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 ...ics[width = 0.7\columnwidth]{figs/img.png}
+                                                  
 ? X
  
 Here is how much of TeX's memory you used:
- 31823 strings out of 476091
- 627129 string characters out of 5794081
- 1850330 words of memory out of 5000000
- 51554 multiletter control sequences out of 15000+600000
+ 31869 strings out of 476091
+ 628061 string characters out of 5794081
+ 1854330 words of memory out of 5000000
+ 51588 multiletter control sequences out of 15000+600000
  560170 words of font info for 131 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,3n,96p,1172b,261s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,13n,96p,1172b,261s stack positions out of 10000i,1000n,20000p,200000b,200000s
 No pages of output.
 PDF statistics:
  6 PDF objects out of 1000 (max. 8388607)
