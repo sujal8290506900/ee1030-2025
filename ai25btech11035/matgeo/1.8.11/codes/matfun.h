@@ -4,15 +4,6 @@
 // Revised November 13, 2023
 
 //Function declaration
-void freeMat(double **mat, int rows);
-#include <stdlib.h>
-
-void freeMat(double **mat, int rows) {
-    for (int i = 0; i < rows; i++) {
-        free(mat[i]);
-    }
-    free(mat);
-}
 
 double **Mateigval(double **a);//eigenvalues of a 2x2 matrix
 double **Matquad(double a,double b, double c);//roots of a quadratic equation

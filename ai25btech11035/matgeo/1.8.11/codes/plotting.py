@@ -42,4 +42,4 @@ plt.ylabel('$y$')
 plt.grid() # minor
 plt.axis('equal')
 
-plt.savefig('figs/img.png')
+plt.savefig('../figs/img.png')

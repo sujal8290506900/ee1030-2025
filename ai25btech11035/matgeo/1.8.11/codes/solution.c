@@ -2,7 +2,7 @@
 #include <math.h>
 #include <stdlib.h>
 #include "matfun.h"   // For createMat, freeMat
-
+#include "geofun.h"
 int main() {
     // Define points as column vectors
     double **A, **B;

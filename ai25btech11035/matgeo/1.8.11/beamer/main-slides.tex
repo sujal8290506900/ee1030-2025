@@ -4,7 +4,6 @@
 \usepackage{amssymb}
 %\usepackage{advdate}
 \usepackage{graphicx}
-\graphicspath{{./figs/}}
 \usepackage{adjustbox}
 \usepackage{subcaption}
 \usepackage{enumitem}
@@ -52,11 +51,11 @@
 %\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
 \providecommand{\system}[1]{\overset{\mathcal{#1}}{ \longleftrightarrow}}
 %\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
-	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
-%\newcommand{\solution}{\noindent \textbf{Solution: }}
+	%\newcommand{\solution}[2]{\vec{Solution:}{#1}}
+%\newcommand{\solution}{\noindent \vec{Solution: }}
 \providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
 \newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
-\let\vec\mathbf
+
 
 \lstset{
 %language=C,
@@ -107,12 +106,14 @@ columns=fullflexible
 \section{Question}
 \begin{frame}{Question}
 \textbf{Question}:
-\\
-\noindent AOBC is a rectangle whose three vertices are vertices \textbf{A}(0,3),\textbf{O}(0,0),\textbf{B}(5,0). The 
-length of diagonal is \underline{\hspace{2cm}}.
- 
+
+
+\noindent AOBC is a rectangle whose three vertices are vertices $\vec{A}(0,3),\vec{O}(0,0),\vec{B}(5,0)$. The 
+length of diagonal is \underline{\hspace{2cm}}.   
+
 \end{frame}
 
+    
 
 \section{Solution}
 \begin{frame}{Solution}
@@ -120,28 +121,28 @@ length of diagonal is \underline{\hspace{2cm}}.
 \\
 From the given information,
 \begin{align}
-		\textbf{A} = \myvec{0\\3},\textbf{O} = \myvec{0\\0},\textbf{B} = \myvec{5\\0} 
+		\vec{A} = \myvec{0\\3},\vec{O} = \myvec{0\\0},\vec{B} = \myvec{5\\0} 
 \end{align}
 Then the length of the diagonal AB is :
 
 \begin{align}
-    \textbf{A-B}=\myvec{0\\3}-\myvec{5\\0}=\myvec{-5\\3},
+    \vec{A-B}=\myvec{0\\3}-\myvec{5\\0}=\myvec{-5\\3},
     \\
     \\
-    \textbf{(A-B)}^T\textbf{(A-B)}=34
+    \vec{(A-B)}^T\vec{(A-B)}=34
     \end{align}
     
     Thus the desired distance is
     
     \begin{align}
-     \Rightarrow AB=||A-B||=\sqrt{34}	 
+     \Rightarrow AB=||\vec{A-B}||=\sqrt{34}	 
     \end{align}
     \end{frame}
     \subsection{plot}
-       \begin{frame}{Plot}
+       \begin{frame}[fragile]
     \begin{figure}[H]
     \centering
-    \includegraphics[width = 0.7\columnwidth]{figs\img.png}
+    \includegraphics[width = 0.6\columnwidth]{../figs/img.png}
     \caption*{}
     \label{figs}
 \end{figure}
