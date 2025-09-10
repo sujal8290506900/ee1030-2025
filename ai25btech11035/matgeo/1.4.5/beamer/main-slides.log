@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.7.30)  6 SEP 2025 10:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.7.30)  10 SEP 2025 10:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1107,76 +1107,92 @@ No file main-slides.nav.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-No file main-slides.toc.
-[2
-
-]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 116
+LaTeX Font Info:    Trying to load font information for U+msa on input line 113
 .
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 116
+LaTeX Font Info:    Trying to load font information for U+msb on input line 113
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 116.
+ut line 113.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 116.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 113.
 
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <8> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 116.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 113.
 
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 116.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 113.
 
 
-[3
+[2
+
+] [3
 
 ] [4
 
-] [5
+]
 
-] [6
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.148 \end{frame}
+                 
+? 
+[5
 
 ]
 \openout4 = `main-slides.vrb'.
 
  (./main-slides.vrb
-<../figs/img.png, id=55, 462.528pt x 346.896pt>
-File: ../figs/img.png Graphic file (type png)
-<use ../figs/img.png>
-Package pdftex.def Info: ../figs/img.png  used on input line 3.
-(pdftex.def)             Requested size: 205.37926pt x 154.0374pt.
-) [7
 
- <../figs/img.png>]
+LaTeX Warning: File `../figs/img.png' not found on input line 3.
+
+
+! Package pdftex.def Error: File `../figs/img.png' not found: using draft setti
+ng.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...s[width = 0.6\columnwidth]{../figs/img.png}
+                                                  
+? 
+) [6
+
+]
+\openout4 = `main-slides.vrb'.
+
+ (./main-slides.vrb) [7
+
+]
 \openout4 = `main-slides.vrb'.
 
  (./main-slides.vrb)
+Overfull \vbox (6.1935pt too high) detected at line 211
+ []
+
 [8
 
 ]
 \openout4 = `main-slides.vrb'.
 
- (./main-slides.vrb)
-Overfull \vbox (6.1935pt too high) detected at line 213
- []
-
-[9
-
-]
-\openout4 = `main-slides.vrb'.
-
- (./main-slides.vrb) [10
+ (./main-slides.vrb) [9
 
 ]
 \openout4 = `main-slides.vrb'.
@@ -1187,7 +1203,7 @@ LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-)) [11
+)) [10
 
 ]
 \tf@nav=\write6
@@ -1211,13 +1227,13 @@ Package rerunfilecheck Warning: File `main-slides.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `main-slides.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  60A5B736B5E42E7B427C0398AE03FCDE;506.
+(rerunfilecheck)             After:  73C61D65E6388EEE573CFBB4A480FD27;185.
  ) 
 Here is how much of TeX's memory you used:
- 27361 strings out of 476091
- 519847 string characters out of 5794081
+ 27390 strings out of 476091
+ 520432 string characters out of 5794081
  2043330 words of memory out of 5000000
- 47163 multiletter control sequences out of 15000+600000
+ 47185 multiletter control sequences out of 15000+600000
  521025 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,17n,131p,405b,1576s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1232,10 +1248,10 @@ fonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10
 .pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on main-slides.pdf (11 pages, 129575 bytes).
+Output written on main-slides.pdf (10 pages, 116091 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 102 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
- 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 133 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
+ 24 named destinations out of 1000 (max. 500000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
