@@ -1,0 +1,23 @@
+\frametitle{Python Code for Plotting}
+\begin{lstlisting}[language=Python]
+
+plot_plane(ax, n1f, d1f, "cyan", 0.5)
+plot_plane(ax, n2f, d2f, "orange", 0.5)
+
+# Plot normal vectors
+ax.quiver(a1[0], a1[1], a1[2], n1f[0], n1f[1], n1f[2],
+          length=3, color="blue", linewidth=2, label="Normal to Plane 1")
+ax.quiver(a2[0], a2[1], a2[2], n2f[0], n2f[1], n2f[2],
+          length=3, color="red", linewidth=2, label="Normal to Plane 2")
+
+# Labels
+ax.set_xlabel("X")
+ax.set_ylabel("Y")
+ax.set_zlabel("Z")
+ax.set_title("Planes and Their Normal Vectors")
+ax.legend()
+
+plt.show()
+
+\end{lstlisting}
+
