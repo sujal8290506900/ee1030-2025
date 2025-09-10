@@ -1,2 +1,0 @@
-\beamer@sectionintoc {1}{ C Code}{7}{0}{1}
-\beamer@sectionintoc {2}{Python Code}{9}{0}{2}
