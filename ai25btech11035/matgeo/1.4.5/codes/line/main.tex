@@ -57,24 +57,36 @@
 % \bigskip
 \textbf{Question}:
 \\
-\noindent AOBC is a rectangle whose three vertices are vertices $\vec{A}(0,3),\vec{O}(0,0),\vec{B}(5,0)$. The 
-length of diagonal is \underline{\hspace{2cm}}.
+\noindent Find the coordinates of the point $\vec{P}$ on AD such that AP : PD = 2 : 1. 
+\\
 \textbf{Solution:} 
 \\
-From the given information,
+As nothing is mentioned in the question about the coordinates of A and D , so we are assuming the coordinates of A as (2,2) , D as (-1,-1) .
 \begin{align}
-			\vec A = \myvec{0\\3},\vec O = \myvec{0\\0},\vec{B} = \myvec{5\\0} 
+			\vec A = \myvec{2\\2},\vec D = \myvec{-1\\-1}.
 \end{align}
-Then the direction vector  of the diagonal AB is :
-
-\begin{align}
-    \vec{ A} - \vec{ B} =\myvec{0\\3}-\myvec{5\\0}=\myvec{-5\\3},
-  \end{align}
-the length of the diagonal is :
-\begin{align}
-    (\vec{A}-\vec{B})^T(\vec{A}-\vec{B})=34
-     \Rightarrow AB=||\vec{A}-\vec{B}||=\sqrt{34}      >
-    \end{align}
+as mentioned in the question $\vec{P}$ is dividing the join of A and D in 2:1.
+\\
+so for finding the position vector of $\vec{P}$ we are using section formula :
+\\
+\\
+\textbf{section formula }
+\\
+\\
+If $\vec{D}$ divides BC in the ratio k : 1
+\begin{align*}
+     \vec{D}=\dfrac{k\vec{C}+\vec{B}}{k+1}
+\end{align*}
+the position vector of  $\vec{P}$ is 
+\begin{align*}
+k=2
+      \\
+      \\
+     \vec{P}=\dfrac{2\vec{D}+\vec{A}}{2+1}
+     \\
+     \\
+     \vec{P}=\dfrac{2\myvec{-1\\-1}+\myvec{2\\2}}{2+1}=\myvec{0\\0}
+\end{align*}
         \begin{figure}[H]
     \centering
     \includegraphics[width = 0.7\columnwidth]{figs/img.png}
