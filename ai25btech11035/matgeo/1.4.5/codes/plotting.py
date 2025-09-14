@@ -33,7 +33,6 @@ plt.text(D[0],D[1],"D(-1,-1)")
 
 plt.xlabel('$x$')
 plt.ylabel('$y$')
-plt.legend(loc='best')
 plt.grid() # minor
 plt.axis('equal')
 

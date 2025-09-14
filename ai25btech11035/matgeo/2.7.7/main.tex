@@ -17,6 +17,7 @@
 \usepackage[breaklinks=true]{hyperref}
 \usepackage{tkz-euclide} 
 \usepackage{listings}
+
 \usepackage{gvv}                                        
 %\def\inputGnumericTable{}                                 
 \usepackage[latin1]{inputenc}     
@@ -44,7 +45,7 @@
 
 \begin{document}
 
-\title{1.8.11}
+\title{2.7.7}
 \author{AI25BTECH11035 - SUJAL RAJANI}
 % \maketitle
 % \newpage
@@ -57,36 +58,73 @@
 % \bigskip
 \textbf{Question}:
 \\
-\noindent Find the coordinates of the point $\vec{P}$ on AD such that AP : PD = 2 : 1. 
+Find the area of the quadrilateral ABCD whose vertices are A(-4,-3), B(3,-1),C(0,5), and D(-4,2).
 \\
-\textbf{Solution:} 
+ \textbf{Solution}
+ \\
+as given in the question :
+\begin{align*}
+     \vec{A}=\myvec{-4\\-3\\0},
+     \vec{B}=\myvec{3\\-1\\0},
+     \vec{C}=\myvec{0\\5\0},
+     \vec{D}=\myvec{-4\\-2\\0}
+\end{align*}
+the position vector joining $\vec{B}$ and $\vec{D}$ =  $\vec{B}$ -  $\vec{D}$ =$\myvec{7\\1\\0}$ 
 \\
-As nothing is mentioned in the question about the coordinates of A and D , so we are assuming the coordinates of A as (2,2) , D as (-1,-1) .
+\\
+\\
+the position vector joining $\vec{C}$ and $\vec{A}$ =  $\vec{C}$ -  $\vec{A}$ =$\myvec{4\\8\\0}$
+\\
+\\
+\\
+\\
+the area of quadrilateral ABCD is the vector  product of $\dfrac{1}{2}$ $||($\vec{B}$ -  $\vec{D}$)\times($\vec{C}$ -  $\vec{A}$)||$
+\\  
+{VECTOR PRODUCT}
+\\
+let N be a vector :
 \begin{align}
-			\vec A = \myvec{2\\2},\vec D = \myvec{-1\\-1}.
+    \vec{N}=\myvec{n_1\\n_2\\0}
+    \\
+    \end{align}
+    let M be a vector :
+    \begin{align}
+    \vec{M}=\myvec{m_1\\m_2\\0}
 \end{align}
-as mentioned in the question $\vec{P}$ is dividing the join of A and D in 2:1.
+the vector product of two vectors $\vec{N}$ and $\vec{M}$ is 
 \\
-so for finding the position vector of $\vec{P}$ we are using section formula :
+\vec{N}X\vec{M} =
+\myvec{
+n_{23} & m_{23} \\
+n_{31} & m_{31} \\
+n_{12} & m_{12}
+}
+=
+\myvec{
+n_2 m_3 - n_3 m_2 \\
+n_3 m_1 - n_1 m_3 \\
+n_1 m_2 - n_2 m_1
+}
+=
+\myvec{
+1 \times 0 - 0 \times 8 \\
+0 \times 7 - 7 \times 0 \\
+7 \times 8 - 1 \times 4
+}
+=
+\myvec{
+0 \\
+0 \\
+52
+}
 \\
 \\
-\textbf{section formula }
-\\
-\\
-If $\vec{D}$ divides BC in the ratio k : 1
+area of ABCD is :
 \begin{align*}
-     \vec{D}=\dfrac{k\vec{C}+\vec{B}}{k+1}
-\end{align*}
-the position vector of  $\vec{P}$ is 
-\begin{align*}
-k=2
-      \\
-      \\
-     \vec{P}=\dfrac{2\vec{D}+\vec{A}}{2+1}
-     \\
-     \\
-     \vec{P}=\dfrac{2\myvec{-1\\-1}+\myvec{2\\2}}{2+1}=\myvec{0\\0}
-\end{align*}
+    \dfrac{1}{2}||(\vec{B}-  \vec{A})X(\vec{C} -  \vec{A})||=\dfrac{1}{2}||\myvec{7\\1\\0}X\myvec{4\\8\\0}||= \dfrac{1}{2}\sqrt{\myvec{0\\0\\52}^T\myvec{0\\0\\52}}=26
+    \end{align*}
+    \\
+    n1=7,n2=1,m1=4,m2=8
         \begin{figure}[H]
     \centering
     \includegraphics[width = 0.7\columnwidth]{figs/img.png}
