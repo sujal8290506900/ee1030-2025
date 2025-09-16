@@ -16,7 +16,7 @@ import shlex
 A = np.array([0,0]).reshape(-1,1)
 B = np.array([0,5]).reshape(-1,1)
 C = np.array([3.5,5]).reshape(-1,1)
-D = np.array([3,0]).reshape(-1,1)
+D = np.array([3.5,0]).reshape(-1,1)
 coords = np.block([[A,B,C,D]])
 
 AB = line_gen(A,B)
