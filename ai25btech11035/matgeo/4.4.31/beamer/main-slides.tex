@@ -1,4 +1,4 @@
- \documentclass{beamer}
+\documentclass{beamer}
 \mode<presentation>
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -90,7 +90,7 @@ columns=fullflexible
   showstringspaces=false
 }
 
-\title{Problem 4.4.31}
+\title{Problem 2.10.24}
 \author{Sujal Rajani}
 
 \date{\today} 
@@ -100,225 +100,343 @@ columns=fullflexible
 \titlepage
 \end{frame}
 
+
 \section{Question}
 \begin{frame}{Question}
-\textbf{QUESTION}
-\\
-Find the equation of the line joining $\vec{A}$(1,3) and $\vec{B}$ (0,0).Also,find k if $\vec{D}$ (k,0) is a point such that the area of $\triangle ABD$ is 3 square units.
+\textbf{Question}:
+ \noindent  Let $\vec{x}$,$\vec{y}$ and $\vec{z}$ be three vectors each of magnitude $\sqrt 2$ and the angle between each pair of them is $\dfrac{\pi}{3}$. If $\vec{a}$ is a non-zero vector perpendicular to $\vec{x}$ and $\vec{y}$ x $\vec{z}$ and $\vec{b}$ is a non-zero vector perpendicular to $\vec{y}$ and $\vec{z}$ x $\vec{x}$, then
+ 
+ 
+  (A) $\vec{b}$ = ($\vec{b}\cdot\vec{z}$)($\vec{z}-\vec{x}$)
+  \\
+(B) $\vec{a}$ = ($\vec{a}.\vec{y}$)($\vec{y}-\vec{z}$)
+ \\
+ (C)$\vec{a}.\vec{b}$ = -($\vec{a}.\vec{y}$)($\vec{b}.\vec{z}$)
+ \\
+ (D)$\vec{a}$ = -($\vec{a}.\vec{y}$)($\vec{z}-\vec{y}$)
+ 
+ 
 \end{frame}
 \begin{frame}{Solution}
-\textbf{SOLUTION}
-as mentioned in the problem the position vector of the points is :
-\\
+\textbf{Solution:} 
+as mentioned in the question : 
 \begin{align*}
-    \vec{A}=\myvec{1\\3},\vec{B}=\myvec{0\\0},\vec{D}=\myvec{k\\0}
-\end{align*}
-the general equation of a line passing through two position vector $\vec{B}$ and $\vec{A}$ is :
-\begin{align*}
-    \vec{L}=\vec{H}+z\myvec{1\\m}
-\end{align*}
-$\vec{H}$:is either the position vector of $\vec{A}$ OR $\vec{B}$
-\\
-m is the slope of the line .
+    ||\vec{x}||=\sqrt{2},
+    ||\vec{y}||=\sqrt{2},
+    ||\vec{z}||=\sqrt{2}
+    \end{align*}
+    \begin{equation}
+\vec{x}^\top\vec{y}=1,\vec{x}^\top\vec{z}=1,\vec{y}^\top\vec{z}=1
+\end{equation}
 
- \end{frame}
-\begin{frame}{Solution}
-\begin{align*}
-    m=\dfrac{y_2-y_1}{x_2-x_1}
-    \\
-    \vec{A}=\myvec{x_2\\y_2},\vec{B}=\myvec{x_1\\y_1}
-    \\
-    m=3
-\end{align*}
-
-\\
-z is an arbitrary constant .
-\\
-the equation of line passing through  $\vec{B}$ and $\vec{A}$ is :
-\\
-\begin{align*}
-    \vec{L}=\myvec{0\\0}+z\myvec{1\\3}
-\end{align*}
-area of $\triangle ABD $ : 
-\\
-\begin{align*}
-    \dfrac{1}{2}||(\vec{A}- \vec{B})X(\vec{D}- \vec{B})||=3
-\end{align*}
-     \end{frame}
-     \begin{frame}{VECTOR PRODUCT}
-     \textbf{VECTOR PRODUCT}
-\\
-let N be a vector :
-\begin{align}
-    \vec{N}=\myvec{n_1\\n_2\\0}
-    \\
-    \end{align}
-    let M be a vector :
-    \begin{align}
-    \vec{M}=\myvec{m_1\\m_2\\0}
-\end{align}
-the vector product of two vectors $\vec{N}$ and $\vec{M}$ is 
-\\
-\vec{N}X\vec{M} =
-\myvec{
-n_{23} & m_{23} \\
-n_{31} & m_{31} \\
-n_{12} & m_{12}
-}
-=
-\myvec{
-n_2 m_3 - n_3 m_2 \\
-n_3 m_1 - n_1 m_3 \\
-n_1 m_2 - n_2 m_1
-}
-=
-\myvec{
-3 \times 0 - 0 \times 0 \\
-0 \times k - 1 \times 0 \\
-1 \times 0 - 3 \times k
-}
-=
-\myvec{
-0 \\
-0 \\
-3k
-}
 \end{frame}
-     \begin{frame}{solution}
-         {area of $\triangle ABD$ is :}
+\begin{frame}{Solution}
+If $\vec{a}$ is a non-zero vector perpendicular to $\vec{x}$ and $\vec{y}$ x $\vec{z}$ this implies :
+\\
 \begin{align*}
-    \dfrac{1}{2}||(\vec{A}-  \vec{B})X(\vec{D} -  \vec{B})||=\dfrac{1}{2}||\myvec{1\\3\\0}X\myvec{
-    K\\0\\0}||= \dfrac{1}{2}\sqrt{\myvec{0\\0\\3K}^\top\myvec{0\\0\\3K}}=3
-    \end{align*}
-    \begin{align*}
-        k=+2,-2
-    \end{align*}
-    n1=1,n2=3,m1=k,m2=0
+    \vec{a}^\top\vec{x}=0, \vec{a}^\top(\vec{y} X \vec{z})=0
+\end{align*}
+
+
+this implies that  $\vec{x}$ and $\vec{y} X \vec{z}$ lie in the same plane and their vector product is parallel to $\vec{a}$
 \\
-for the conveniences we are taking  $\vec{D_1}$and $\vec{D_2}$
+so the vector product of 
 \\
-    so the position vector of $\vec{D}$ :
-    \begin{align*}
-        \vec{D_1}=\myvec{2\\0},\vec{D_2}=\myvec{-2\\0}
-    \end{align*}
-     \end{frame}
-       \begin{frame}[fragile]
-    \begin{figure}[H]
+\begin{align*}
+    \vec{a}X(\vec{x}X(\vec{y} X \vec{z}))=0
+\end{align*}
+\end{frame}
+\begin{frame}{vector product}
+defining : triple vector product 
+\begin{align*}
+    (\vec{x}X(\vec{y} X \vec{z}))=(\vec{x}^\top \vec{z})\vec{y}-(\vec{x}^\top \vec{y})\vec{z}
+\end{align*}
+\end{frame}
+\begin{frame}{Solution}
+by equation (1.1) : $\vec{x}^\top\vec{z}=1,\vec{x}^\top\vec{y}=1$
+\begin{align*}
+    \vec{a}X(\vec{x}X(\vec{y} X \vec{z}))=(\vec{x}^\top\vec{z})(\vec{y}X\vec{a})-(\vec{x}^\top\vec{y})(\vec{z}X\vec{a)}=\vec{a}X(\vec{y}-\vec{z})=0
+\end{align*}
+as $\vec{a}$ is parallel to $\vec{y}-\vec{z}$ so we can say that :
+\begin{align*}
+    \vec{a}=k(\vec{y}-\vec{z})
+\end{align*}    
+k is a  constant
+\end{frame}
+\begin{frame}{Solution}
+If $\vec{b}$ is a non-zero vector perpendicular to $\vec{y}$ and $\vec{z}$ x $\vec{x}$ this implies :
+\\
+\begin{align*}
+    \vec{b}^\top\vec{y}=0, \vec{b}^\top(\vec{z} X \vec{x})=0
+\end{align*}
+this implies that  $\vec{x}$ and $\vec{y} X \vec{z}$ lie in the same plane and their vector product is parallel to $\vec{a}$
+\\
+so the vector product of 
+\\
+\begin{align*}
+    \vec{b}X(\vec{y}X(\vec{z} X \vec{x}))=0
+\end{align*}
+\end{frame}
+\begin{frame}{Solution}
+by equation (1.1) :  $\vec{x}^\top\vec{y}=1,\vec{z}^\top\vec{y}=1$
+\begin{align*}
+    \vec{bX}(\vec{y}X(\vec{z} X \vec{x}))=(\vec{y}^\top\vec{x})(\vec{z}X\vec{b})-(\vec{y}^\top\vec{z})(\vec{x}X\vec{b})=\vec{b}X(\vec{z}-\vec{x})=0 
+\end{align*}
+as $\vec{b}$ is parallel to $\vec{z}-\vec{x}$ so we can say that :
+\begin{align*}
+    \vec{b}=m(\vec{z}-\vec{x}) 
+\end{align*}
+m is a  constant
+\end{frame}
+\begin{frame}{Solution}
+now we check options one by one :
+\\
+\\
+option (a)
+\\
+$\vec{b}$ = ($\vec{b}.\vec{z}$)($\vec{z}-\vec{x}$)
+\\
+we are putting b on both sides=
+ \begin{align*}
+    m(\vec{z}-\vec{x})=( m(\vec{z}-\vec{x})^\top\vec{z})(\vec{z}-\vec{x}) 
+    \\
+    m(\vec{z}-\vec{x})=m(\vec{z}.\vec{z}-\vec{x}^\top\vec{z})(\vec{z}-\vec{x}) 
+    \\
+     m(\vec{z}-\vec{x})= m(\vec{z}-\vec{x})
+ \end{align*}
+ option A is correct . 
+\end{frame}
+\begin{frame}{Solution}
+ option (b)
+\\
+$\vec{a}$ = ($\vec{a}^\top\vec{y}$)($\vec{y}-\vec{z}$)
+\\
+we are putting a on both sides=
+\\
+ \begin{align*}
+   k(\vec{y}-\vec{z})=(k(\vec{y}-\vec{z})^\top\vec{y})(\vec{y}-\vec{z})
+    \\
+    k(\vec{y}-\vec{z})=(k(\vec{y}^\top\vec{y}-\vec{y}^\top\vec{z})(\vec{y}-\vec{z})
+    \\
+    \\
+     k(\vec{y}-\vec{z})= k(\vec{y}-\vec{z})
+ \end{align*}
+ option B is correct .
+\end{frame}
+\begin{frame}{Solution}
+ option (c)
+\\
+$\vec{a}^\top\vec{b}$ = -($\vec{a}^\top\vec{y}$)($\vec{b}^\top\vec{z}$)
+\\
+we are putting a and b on both sides=
+\\
+\begin{align*}
+    k(\vec{y}-\vec{z})m(\vec{z}-\vec{x})=-( m(\vec{z}-\vec{x}).\vec{z})(k(\vec{y}-\vec{z})^\top\vec{y})
+    \\
+    -km=-km
+\end{align*}
+option C is correct  .
+\\
+option D is correct because option B is correct.
+\end{frame}
+\begin{frame}{Solution}
+
+\\
+for plotting we are assuming the position vector :
+\begin{align*}
+    \vec x=\myvec{1\\1\\0},\vec y=\myvec{1\\0\\1},\vec z=\myvec{0\\1\\1},\vec a=\myvec{-1\\1\\0},\vec b=\myvec{-1\\0\\1}
+\end{align*}
+\end{frame}
+\begin{frame}{fragile}
+ \begin{figure}[H]
     \centering
-    \includegraphics[width = 0.6\columnwidth]{../figs/img.png}
+    \includegraphics[width = 0.7\columnwidth]{../figs/img.png}
     \caption*{}
     \label{figs}
 \end{figure}
 \end{frame}
-\section{ C Code}
 \begin{frame}[fragile]
 \frametitle{C Code }
 \begin{lstlisting}[language=C]
 #include <stdio.h>
-#include <stdlib.h>
 #include <math.h>
 
-int main() {
-    // Coordinates for A, B
-    int x1 = 1, y1 = 3;
-    int x2 = 0, y2 = 0;
+// Vector operations
+typedef struct {
+    double x, y, z;
+} Vector;
 
-    // Calculate slope and intercept
-    float m = (float)(y2 - y1) / (x2 - x1); // Slope
-    float c = y1 - m * x1; // Intercept
-    printf("Equation of line AB: y = %.2fx + %.2f\n", m, c);
+Vector add(Vector a, Vector b) {
+    return (Vector){a.x + b.x, a.y + b.y, a.z + b.z};
+}
+
 \end{lstlisting}
 \end{frame}
 
 \begin{frame}[fragile]
 \frametitle{C Code }
 \begin{lstlisting}[language=C]
-        // Area of triangle formula in coordinates:
-    // Area = (1/2) * |x1(y2-y3) + x2(y3-y1) + x3(y1-y2)|
-    // Let D(k,0) = (x3, y3)
-    int y3 = 0;
-    float area_target = 3.0;
-    // Substitute:
-    // area = 0.5 * |1*(0-0) + 0*(0-3) + k*(3-0)|
-    //       = 0.5 * |3*k|
-    // Set 0.5 * |3*k| = 3  => |k| = 2
-    float k1 = 2.0, k2 = -2.0;
+ Vector sub(Vector a, Vector b) {
+    return (Vector){a.x - b.x, a.y - b.y, a.z - b.z};
+}
 
-    printf("Possible values of k for D(k,0): %.2f and %.2f\n", k1, k2);
+Vector scalarMul(double c, Vector a) {
+    return (Vector){c * a.x, c * a.y, c * a.z};
+}
+
+double dot(Vector a, Vector b) {
+    return a.x*b.x + a.y*b.y + a.z*b.z;
+}
+
+
+    
+\end{lstlisting}
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{C Code }
+\begin{lstlisting}[language=C]
+Vector cross(Vector a, Vector b) {
+    return (Vector){
+        a.y*b.z - a.z*b.y,
+        a.z*b.x - a.x*b.z,
+        a.x*b.y - a.y*b.x
+    };
+}
+
+void printVec(Vector v) {
+    printf("(%.2f, %.2f, %.2f)", v.x, v.y, v.z);
+}
+
+\end{lstlisting}
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{C Code }
+\begin{lstlisting}[language=C]
+int main() {
+    // Define x, y, z such that |x|=|y|=|z|=sqrt(2) and angle = 60 deg
+    // Example choice:
+    Vector x = {1, 1, 0};   // |x| = sqrt(2)
+    Vector y = {1, 0, 1};   // |y| = sqrt(2)
+    Vector z = {0, 1, 1};   // |z| = sqrt(2)
+    // These satisfy x·y = x·z = y·z = 1 → cosθ = 1/2 → θ = 60°
+
+    // Define a ⟂ x, y, x×z → take a = cross(x, y)
+    Vector a = cross(x, y);
+
+    // Define b ⟂ y, z, z×x → take b = cross(y, z);
+
+    Vector b = cross(y, z);
+
+\end{lstlisting}
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{C Code }
+\begin{lstlisting}[language=C]
+  printf("x = "); printVec(x); printf("\n");
+    printf("y = "); printVec(y); printf("\n");
+    printf("z = "); printVec(z); printf("\n");
+
+    printf("a = "); printVec(a); printf("\n");
+    printf("b = "); printVec(b); printf("\n\n");
+
+    // Now check conditions
+    Vector lhs1 = b;
+    Vector rhs1 = scalarMul(dot(b, z), sub(z, x));
+    printf("1) b == (b.z)(z - x) ? -> (%f,%f,%f)\n", lhs1.x-rhs1.x, lhs1.y-rhs1.y, lhs1.z-rhs1.z);
+
+\end{lstlisting}
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{C Code }
+\begin{lstlisting}[language=C]
+   Vector lhs2 = a;
+    Vector rhs2 = scalarMul(dot(a, y), sub(y, z));
+    printf("2) a == (a.y)(y - z) ? -> (%f,%f,%f)\n", lhs2.x-rhs2.x, lhs2.y-rhs2.y, lhs2.z-rhs2.z);
+
+    double lhs3 = dot(a, b);
+    double rhs3 = -(dot(a, y) * dot(b, z));
+    printf("3) a·b == -(a.y)(b.z) ? -> LHS=%.2f, RHS=%.2f\n", lhs3, rhs3);
+
+\end{lstlisting}
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{C Code }
+\begin{lstlisting}[language=C]
+  Vector lhs4 = a;
+    Vector rhs4 = scalarMul(-(dot(a, y)), sub(z, y));
+    printf("4) a == -(a.y)(z - y) ? -> (%f,%f,%f)\n", lhs4.x-rhs4.x, lhs4.y-rhs4.y, lhs4.z-rhs4.z);
 
     return 0;
 }
 \end{lstlisting}
 \end{frame}
+
+\section{Python Code}
 \begin{frame}[fragile]
 \frametitle{Python Code for Plotting}
 \begin{lstlisting}[language=Python]
 import numpy as np
 import matplotlib.pyplot as plt
-from line.funcs import *
-# from triangle.funcs import *
-# from conics.funcs import circ_gen
-# if using termux
-import subprocess
-import shlex
-# end if
+import matplotlib as mp
+mp.use("TkAgg")
 
-\end{lstlisting}
+# ------------------------
+# Step 1: Define vectors
+# ------------------------
+vectors = {
+    "x": np.array([1, 1, 0]),
+    "y": np.array([1, 0, 1]),
+    "z": np.array([0, 1, 1]),
+    "a": np.array([-1, 1, 0]),
+    "b": np.array([-1, 0, 1])
+}
 
-\end{frame}
-
-\begin{frame}[fragile]
-\frametitle{Python Code for Plotting}
-\begin{lstlisting}[language=Python]
-# Triangle vertices
-A = np.array([1,3]).reshape(-1,1)
-B = np.array([0,0]).reshape(-1,1)
-D = np.array([2,0]).reshape(-1,1)
-D' = np.array([-2,0]).reshape(-1,1
-coords = np.block([[A,B,D,D']])
-# Generate triangle sides
-AB = line_gen(A,B)
-BD = line_gen(B,D)
-DA = line_gen(D,A)
-BD' = line_gen(B,D')
-D'A = line_gen(D',A)
 \end{lstlisting}
 
 \end{frame}
 \begin{frame}[fragile]
 \frametitle{Python Code for Plotting}
 \begin{lstlisting}[language=Python]
+colors = {
+    "x": "red",
+    "y": "blue",
+    "z": "green",
+    "a": "orange",
+    "b": "purple"
+}
 
+# ------------------------
+# Step 2: Plot vectors
+# ------------------------
+fig = plt.figure(figsize=(8, 8))
+ax = fig.add_subplot(111, projection="3d")
+for name, vec in vectors.items():
+    ax.quiver(0, 0, 0, vec[0], vec[1], vec[2],
+              color=colors[name], linewidth=2, arrow_length_ratio=0.1, label=name)
 
-# Plot sides
-plt.plot(AB[0,:],AB[1,:], label='AB')
-plt.plot(BD[0,:],BD[1,:], label='BD')
-plt.plot(DA[0,:],DA[1,:], label='DA')
-plt.plot(BD'[0,:],BD'[1,:], label='BD'')
-plt.plot(D'A[0,:],D'A[1,:], label='D'A)
 \end{lstlisting}
 
 \end{frame}
 \begin{frame}[fragile]
 \frametitle{Python Code for Plotting}
 \begin{lstlisting}[language=Python]
-# Scatter vertices
-plt.scatter(coords[0,:],coords[1,:])
-plt.text(A[0],A[1],"A(1,3)")
-plt.text(B[0],B[1],"B(0,0)")
-plt.text(D[0],D[1],"D(2,0)")
-plt.text(D'[0],D'[1],"D'(-2,0)")
-# Styling
-plt.xlabel('$x$')
-plt.ylabel('$y$')
-plt.legend(loc='best')
-plt.grid(True)
-plt.axis('equal')
 
-plt.savefig('../figs/triangle.png')
+# Step 3: Formatting
+# ------------------------
+ax.set_xlim([-2, 2])
+ax.set_ylim([-2, 2])
+ax.set_zlim([-2, 2])
+
+ax.set_xlabel("X-axis")
+ax.set_ylabel("Y-axis")
+ax.set_zlabel("Z-axis")
+ax.set_title("3D Vector Plot")
+ax.legend()
+
 plt.show()
 
 \end{lstlisting}
 
 \end{frame}
+
 \end{document}
