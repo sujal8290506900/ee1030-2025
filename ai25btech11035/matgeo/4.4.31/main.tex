@@ -17,7 +17,6 @@
 \usepackage[breaklinks=true]{hyperref}
 \usepackage{tkz-euclide} 
 \usepackage{listings}
-
 \usepackage{gvv}                                        
 %\def\inputGnumericTable{}                                 
 \usepackage[latin1]{inputenc}     
@@ -45,7 +44,7 @@
 
 \begin{document}
 
-\title{4.4.31}
+\title{2.10.24}
 \author{AI25BTECH11035 - SUJAL RAJANI}
 % \maketitle
 % \newpage
@@ -56,79 +55,147 @@
 %\renewcommand{\thetable}{\theenumi}
 % \newpage
 % \bigskip
-\textbf{QUESTION}
+\textbf{Question}:
 \\
-Find the equation of the line joining $\vec{A}$(1,3) and $\vec{B}$ (0,0).Also,find k if $\vec{D}$ (k,0) is a point such that the area of $\triangle ABD$ is 3 square units.
+ Let $\vec{x}$,$\vec{y}$ and $\vec{z}$ be three vectors each of magnitude $\sqrt 2$ and the angle between each pair of them is $\dfrac{\pi}{3}$. If $\vec{a}$ is a non-zero vector perpendicular to $\vec{x}$ and $\vec{y}$ x $\vec{z}$ and $\vec{b}$ is a non-zero vector perpendicular to $\vec{y}$ and $\vec{z}$ x $\vec{x}$, then
+ \begin{enumerate}
+ \begin{multicols}{2}
+     \item  $\vec{b}$ = ($\vec{b}\cdot\vec{z}$)($\vec{z}-\vec{x}$)
+      \item  $\vec{a}$ = ($\vec{a}.\vec{y}$)($\vec{y}-\vec{z}$)
+       \item  $\vec{a}.\vec{b}$ = -($\vec{a}.\vec{y}$)($\vec{b}.\vec{z}$)
+       \item  $\vec{a}$ = -($\vec{a}.\vec{y}$)($\vec{z}-\vec{y}$)
+ \end{multicols} 
+ \end{enumerate}
 \\
-\textbf{solution}
+solution :
 \\
-as mentioned in the problem the position vector of the points is :
-\\
+defining : triple vector product 
 \begin{align*}
-    \vec{A}=\myvec{1\\3},\vec{B}=\myvec{0\\0},\vec{D}=\myvec{k\\0}
+    (\vec{x}X(\vec{y} X \vec{z}))=(\vec{x}^\top \vec{z})\vec{y}-(\vec{x}^\top \vec{y})\vec{z}
 \end{align*}
-the general equation of a line passing through two position vector $\vec{B}$ and $\vec{A}$ is :
-\begin{align*}
-    \vec{L}=\vec{H}+z\myvec{1\\m}
-\end{align*}
-$\vec{H}$:is either the position vector of $\vec{A}$ OR $\vec{B}$
 \\
-m is the slope of the line .
+as mentioned in the question : 
 \begin{align*}
-    m=\dfrac{y_2-y_1}{x_2-x_1}
+    ||\vec{x}||=\sqrt{2},
+    ||\vec{y}||=\sqrt{2},
+    ||\vec{z}||=\sqrt{2}
     \\
-    \vec{A}=\myvec{x_2\\y_2},\vec{B}=\myvec{x_1\\y_1}
-    \\
-    m=3
+\vec{x}^\top\vec{y}=1,\vec{x}^\top\vec{z}=1,\vec{y}^\top\vec{z}=1
+\end{align*}
+If $\vec{a}$ is a non-zero vector perpendicular to $\vec{x}$ and $\vec{y}$ x $\vec{z}$ this implies :
+\\
+\begin{align*}
+    \vec{a}^\top\vec{x}=0, \vec{a}^\top(\vec{y} X \vec{z})=0
+\end{align*}
+this implies that  $\vec{x}$ and $\vec{y} X \vec{z}$ lie in the same plane and their vector product is parallel to $\vec{a}$
+\\
+so the vector product of 
+\\
+\begin{align*}
+    \vec{a}X(\vec{x}X(\vec{y} X \vec{z}))=0
 \end{align*}
 
-\\
-z is a constant .
-\\
-the equation of line passing through  $\vec{B}$ and $\vec{A}$ is :
-\\
 \begin{align*}
-    \vec{L}=\myvec{0\\0}+z\myvec{1\\3}
-\end{align*}
-area of $\triangle ABD $ : 
-\\
-\begin{align*}
-    \dfrac{1}{2}||(\vec{A}- \vec{B})X(\vec{D}- \vec{B})||=3
-\end{align*}
-\textbf{VECTOR PRODUCT}
-\\
-let N be a vector :
-\begin{align}
-    \vec{N}=\myvec{n_1\\n_2\\0}
+    \vec{x}^\top\vec{z}=1,\vec{x}^\top\vec{y}=1
     \\
-    \end{align}
-    let M be a vector :
-    \begin{align}
-    \vec{M}=\myvec{m_1\\m_2\\0}
-\end{align}
-the vector product of two vectors $\vec{N}$ and $\vec{M}$ is 
-\\
+    \vec{a}X(\vec{x}X(\vec{y} X \vec{z}))=(\vec{x}^\top\vec{z})(\vec{y}X\vec{a})-(\vec{x}^\top\vec{y})(\vec{z}X\vec{a)}=\vec{a}X(\vec{y}-\vec{z})
+\end{align*}
+as $\vec{a}$ is parallel to $\vec{y}-\vec{z}$ so we can say that :
 \begin{align*}
-    \vec{N}X\vec{M}=\myvec{0\\0\\n_1m_2-m_1n_2}
+    \vec{a}=k(\vec{y}-\vec{z})
 \end{align*}
 \\
-{area of $\triangle ABD$ is :}
-\begin{align*}
-    \dfrac{1}{2}||(\vec{A}-  \vec{B})X(\vec{D} -  \vec{B})||=\dfrac{1}{2}||\myvec{1\\3\\0}X\myvec{
-    K\\0\\0}||= \dfrac{1}{2}\sqrt{\myvec{0\\0\\3K}^\top\myvec{0\\0\\3K}}=3
-    \end{align*}
-    \begin{align*}
-        k=+2,-2
-    \end{align*}
-    n1=1,n2=3,m1=k,m2=0
+k is a  constant
+\\
+If $\vec{b}$ is a non-zero vector perpendicular to $\vec{y}$ and $\vec{z}$ x $\vec{x}$ this implies :
 \\
 
-    so the position vector of $\vec{D}$ :
-    \begin{align*}
-        \vec{D}=\myvec{2\\0},\vec{D}=\myvec{-2\\0}
-    \end{align*}
+\begin{align*}
+    \vec{b}^\top\vec{y}=0, \vec{b}^\top(\vec{z} X \vec{x})=0
+\end{align*}
+\\
+this implies that  $\vec{x}$ and $\vec{y} X \vec{z}$ lie in the same plane and their vector product is parallel to $\vec{a}$
+\\
+so the vector product of 
+\\
+\begin{align*}
+    \vec{b}X(\vec{y}X(\vec{z} X \vec{x}))=0
+\end{align*}
+\\
 
-        \begin{figure}[H]
+\\
+\begin{align*}
+\\
+    \vec{x}^\top\vec{y}=1,\vec{z}^\top\vec{y}=1
+    \\ 
+    \vec{bX}(\vec{y}X(\vec{z} X \vec{x}))=(\vec{y}^\top\vec{x})(\vec{z}X\vec{b})-(\vec{y}^\top\vec{z})(\vec{x}X\vec{b})=\vec{b}X(\vec{z}-\vec{x})=0 
+\end{align*}
+as $\vec{b}$ is parallel to $\vec{z}-\vec{x}$ so we can say that :
+\begin{align*}
+    \vec{b}=m(\vec{z}-\vec{x})
+\end{align*}
+\\
+m is a  constant
+\\
+now we check options one by one :
+\\
+\\
+option (a)
+\\
+$\vec{b}$ = ($\vec{b}.\vec{z}$)($\vec{z}-\vec{x}$)
+\\
+we are putting b on both sides=
+\\
+ \begin{align*}
+    m(\vec{z}-\vec{x})=( m(\vec{z}-\vec{x})^\top\vec{z})(\vec{z}-\vec{x}) 
+    \\
+    m(\vec{z}-\vec{x})=m(\vec{z}.\vec{z}-\vec{x}^\top\vec{z})(\vec{z}-\vec{x}) 
+    \\
+    \\
+     m(\vec{z}-\vec{x})= m(\vec{z}-\vec{x})
+ \end{align*}
+ option A is correct . 
+ \\
+ option (b)
+\\
+$\vec{a}$ = ($\vec{a}^\top\vec{y}$)($\vec{y}-\vec{z}$)
+\\
+we are putting a on both sides=
+\\
+ \begin{align*}
+   k(\vec{y}-\vec{z})=(k(\vec{y}-\vec{z})^\top\vec{y})(\vec{y}-\vec{z})
+    \\
+    k(\vec{y}-\vec{z})=(k(\vec{y}^\top\vec{y}-\vec{y}^\top\vec{z})(\vec{y}-\vec{z})
+    \\
+    \\
+     k(\vec{y}-\vec{z})= k(\vec{y}-\vec{z})
+ \end{align*}
+ option B is correct .
+\\  
+ option (c)
+\\
+$\vec{a}^\top\vec{b}$ = -($\vec{a}^\top\vec{y}$)($\vec{b}^\top\vec{z}$)
+\\
+we are putting a and b on both sides=
+\\
+\begin{align*}
+    k(\vec{y}-\vec{z})m(\vec{z}-\vec{x})=-( m(\vec{z}-\vec{x}).\vec{z})(k(\vec{y}-\vec{z})^\top\vec{y})
+    \\
+    -km=-km
+\end{align*}
+option C is correct  .
+\\
+option D is correct because option B is correct.
+\\
+for plotting we are assuming the position vector :
+\\
+\begin{align*}
+    \vec x=\myvec{1\\1\\0},\vec y=\myvec{1\\0\\1},\vec z=\myvec{0\\1\\1},\vec a=\myvec{-1\\1\\0},\vec b=\myvec{-1\\0\\1}
+\end{align*}
+
+
+
+ \begin{figure}[H]
     \centering
     \includegraphics[width = 0.7\columnwidth]{figs/img.png}
     \caption*{}
