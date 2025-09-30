@@ -1,0 +1,224 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{mathtools}
+\usepackage{txfonts}
+\usepackage{tkz-euclide}
+\usepackage{listings}
+\usepackage{adjustbox}
+\usepackage{array}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{gvv}
+\usepackage{lmodern}
+\usepackage{circuitikz}
+\usepackage{tikz}
+\lstset{literate={·}{{$\cdot$}}1 {λ}{{$\lambda$}}1 {→}{{$\to$}}1}
+\usepackage{graphicx}
+
+\setbeamertemplate{page number in head/foot}[totalframenumber]
+
+\usepackage{tcolorbox}
+\tcbuselibrary{minted,breakable,xparse,skins}
+
+
+
+\definecolor{bg}{gray}{0.95}
+\DeclareTCBListing{mintedbox}{O{}m!O{}}{%
+  breakable=true,
+  listing engine=minted,
+  listing only,
+  minted language=#2,
+  minted style=default,
+  minted options={%
+    linenos,
+    gobble=0,
+    breaklines=true,
+    breakafter=,,
+    fontsize=\small,
+    numbersep=8pt,
+    #1},
+  boxsep=0pt,
+  left skip=0pt,
+  right skip=0pt,
+  left=25pt,
+  right=0pt,
+  top=3pt,
+  bottom=3pt,
+  arc=5pt,
+  leftrule=0pt,
+  rightrule=0pt,
+  bottomrule=2pt,
+  toprule=2pt,
+  colback=bg,
+  colframe=orange!70,
+  enhanced,
+  overlay={%
+    \begin{tcbclipinterior}
+    \fill[orange!20!white] (frame.south west) rectangle ([xshift=20pt]frame.north west);
+    \end{tcbclipinterior}},
+  #3,
+}
+\lstset{
+    language=C,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    stringstyle=\color{orange},
+    commentstyle=\color{green!60!black},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    breaklines=true,
+    showstringspaces=false,
+}
+%------------------------------------------------------------
+%This block of code defines the information to appear in the
+%Title page
+\title %optional
+{5.13.21}
+\date{September 5,2025}
+%\subtitle{A short story}
+
+\author % (optional)
+{AI25BTECH11035-SUJAL RAJANI}
+\begin{document}
+\frame{\titlepage}
+\begin{frame}{Question}
+if 
+\begin{align*}
+    \myvec{1&1\\0&1}.\myvec{1&2\\0&1}.\myvec{1&3\\0&1}\cdots\myvec{1&n-1\\0&1}=\myvec{1&78\\0&1}.
+\end{align*}
+\\
+then the inverse of $\myvec{1&n\\0&1}$ is 
+  \\
+  (a) $\myvec{1&0\\12&1}$
+  \\
+  \\
+  (b) $\myvec{1&-13\\0&1}$
+  \\
+  \\
+  (c) $\myvec{1&-12\\0&1}$
+  \\
+  \\
+  (d) $\myvec{1&0\\13&1}$
+  \\
+\end{frame}
+
+\begin{frame}{Theoretical Solution}
+as mentioned in the question :
+\\
+\begin{align*}
+    \myvec{1&1\\0&1}.\myvec{1&2\\0&1}.\myvec{1&3\\0&1}.\myvec{1&n-1\\0&1}=\myvec{1&78\\0&1}.
+\end{align*}
+let:
+\begin{equation*}
+   \Vec{A}=\myvec{1&n\\0&1}
+\end{equation*}
+in these type of question we start the solution by analyzing the pattern. 
+\end{frame}
+\begin{frame}{Theoretical solution}
+\begin{align*}
+    \myvec{1&1\\0&1}.\myvec{1&2\\0&1}=\myvec{1&3\\0&1}
+\end{align*}
+\begin{align*}
+   \myvec{1&3\\0&1}.\myvec{1&3\\0&1}=\myvec{1&6\\0&1}
+\end{align*}
+\begin{align*}
+   \myvec{1&6\\0&1}.\myvec{1&4\\0&1}=\myvec{1&10\\0&1}
+\end{align*}
+\begin{align*}
+   \myvec{1&10\\0&1}.\myvec{1&5\\0&1}=\myvec{1&15\\0&1}
+\end{align*}
+\end{frame}
+
+\begin{frame}{Theoretical Solution}
+let the resulting matrix is in the format :
+\begin{align*}
+    \myvec{\alpha_{11}&\alpha_{12}\\\alpha_{21}&\alpha_{22}}
+    \\
+    \alpha_{11}=1,\alpha_{12}=\dfrac{n(n+1)}{2},\alpha_{21}=0,\alpha_{22}=1
+\end{align*}
+so replacing n with n-1 :
+\begin{align*}
+    \myvec{1&\dfrac{n(n-1)}{2}\\0&1}=\myvec{1&78\\0&1}
+    \\
+    \dfrac{n(n-1)}{2}=78
+    \end{align*}
+    \begin{equation*}
+        n=13
+    \end{equation*}
+\end{frame}
+\begin{frame}{Inverse of a matrix}
+ \textbf{inverse of a matrix}
+    \begin{align*}
+        \vec{Adj(A)}\vec{A}=||\vec{A}||\vec{I}
+        \\
+        \vec{Adj(A)}=||\vec{A}||\vec{A}^{-1}
+        \\
+        \vec{A}^{-1}=\dfrac{\vec{Adj(A)}}{||\vec{A}||}
+    \end{align*}
+\end{frame}
+\begin{frame}{Theoretical Solution}
+ adjoint of $\vec{A}$ matrix is :
+    \begin{align*}
+        \vec{Adj(A)}=\myvec{1&-n\\0&1}
+        \\
+        ||\Vec{A}||=1
+        \\
+        \vec{A}^{-1}=\myvec{1&-n\\0&1}
+    \end{align*}
+    \begin{align*}
+        \vec{A}^{-1}=\myvec{1&-13\\0&1}
+    \end{align*}
+    option (B) is correct .
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{C Code -Finding Solution for the system of Equations}
+
+    \begin{lstlisting}[language=C]
+
+#include <stdio.h>
+
+int main() {
+    int n;
+    int sum = 0;
+
+    // Find n such that (n-1)*n/2 = 78
+    for (n = 1; n < 100; n++) {
+        sum = (n - 1) * n / 2;
+        if (sum == 78) {
+            break;
+        }
+    }
+
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{C Code -Finding Solution for the system of Equations}
+
+    \begin{lstlisting}[language=C]
+    
+ printf("Value of n = %d\n", n);
+
+    // Inverse matrix of [[1, n], [0, 1]]
+    int inv[2][2] = {{1, -n}, {0, 1}};
+
+    printf("Inverse matrix is:\n");
+    printf("[[%d, %d],\n [%d, %d]]\n",
+           inv[0][0], inv[0][1], inv[1][0], inv[1][1]);
+
+    return 0;
+}
+
+
+    \end{lstlisting}
+\end{frame}
+
+
+
+
+
+\end{document}

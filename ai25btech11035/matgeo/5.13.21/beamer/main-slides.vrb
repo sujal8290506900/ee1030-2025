@@ -1,0 +1,18 @@
+\frametitle{C Code -Finding Solution for the system of Equations}
+
+    \begin{lstlisting}[language=C]
+
+ printf("Value of n = %d\n", n);
+
+    // Inverse matrix of [[1, n], [0, 1]]
+    int inv[2][2] = {{1, -n}, {0, 1}};
+
+    printf("Inverse matrix is:\n");
+    printf("[[%d, %d],\n [%d, %d]]\n",
+           inv[0][0], inv[0][1], inv[1][0], inv[1][1]);
+
+    return 0;
+}
+
+
+    \end{lstlisting}
