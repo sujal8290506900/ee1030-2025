@@ -1,0 +1,12 @@
+\frametitle{Python Code for Plotting}
+\begin{lstlisting}[language=Python]
+plt.xlabel('$x$')
+plt.ylabel('$y$')
+plt.legend(loc='best')
+plt.grid(True)
+plt.axis('equal')
+
+plt.savefig('../figs/img.png')
+plt.show()
+\end{lstlisting}
+
