@@ -1,12 +1,6 @@
-\frametitle{Python Code for Plotting}
-\begin{lstlisting}[language=Python]
-plt.xlabel('$x$')
-plt.ylabel('$y$')
-plt.legend(loc='best')
-plt.grid(True)
-plt.axis('equal')
-
-plt.savefig('../figs/img.png')
-plt.show()
-\end{lstlisting}
-
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.6\columnwidth]{../figs1/img.png}
+    \caption*{}
+    \label{figs}
+\end{figure}

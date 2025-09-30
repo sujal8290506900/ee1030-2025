@@ -124,119 +124,18 @@ if$\vec{A}$ and $\vec{B}$ are points in the plane such that $\dfrac{PA}{PB}=K$(c
        \begin{frame}[fragile]
     \begin{figure}[H]
     \centering
-    \includegraphics[width = 0.6\columnwidth]{../figs/img.png}
+    \includegraphics[width = 0.6\columnwidth]{../figs2/img.png}
     \caption*{}
     \label{figs}
 \end{figure}
 \end{frame}
-\section{ C Code}
 \begin{frame}[fragile]
-\frametitle{C Code }
-\begin{lstlisting}[language=C]
-#include <stdio.h>
-
-int main() {
-    // Rectangle vertices
-    int Ax = 0, Ay = 0;
-    int Bx = 0, By = 5;
-    int Cx = 3, Cy = 5;
-    int Dx = 3, Dy = 0;
-
- 
-
-\end{lstlisting}
+ \begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.6\columnwidth]{../figs1/img.png}
+    \caption*{}
+    \label{figs}
+\end{figure}
 \end{frame}
 
-\begin{frame}[fragile]
-\frametitle{C Code }
-\begin{lstlisting}[language=C]
-       printf("Coordinates of the rectangle are:\n");
-    printf("A(%d, %d)\n", Ax, Ay);
-    printf("B(%d, %d)\n", Bx, By);
-    printf("C(%d, %d)\n", Cx, Cy);
-    printf("D(%d, %d)\n", Dx, Dy);
-
-    return 0;
-}
-\end{lstlisting}
-\end{frame}
-
-
-
-\begin{frame}[fragile]
-\frametitle{Python Code for Plotting}
-\begin{lstlisting}[language=Python]
-import numpy as np
-import matplotlib.pyplot as plt
-from line.funcs import *
-# from triangle.funcs import *
-# from conics.funcs import circ_gen
-# if using termux
-import subprocess
-import shlex
-# end if
-
-\end{lstlisting}
-
-\end{frame}
-\section{Python Code}
-\begin{frame}[fragile]
-\frametitle{Python Code for Plotting}
-\begin{lstlisting}[language=Python]
-
-\end{lstlisting}
-
-\end{frame}
-\begin{frame}[fragile]
-\frametitle{Python Code for Plotting}
-\begin{lstlisting}[language=Python]
-# Rectangle vertices
-A = np.array([0,0]).reshape(-1,1)
-B = np.array([0,5]).reshape(-1,1)
-C = np.array([3,5]).reshape(-1,1)
-D = np.array([3,0]).reshape(-1,1)
-
-coords = np.block([[A,B,C,D]])
-# Generate only rectangle sides
-AB = line_gen(A,B)
-BC = line_gen(B,C)
-CD = line_gen(C,D)
-DA = line_gen(D,A)
-\end{lstlisting}
-
-\end{frame}
-\begin{frame}[fragile]
-\frametitle{Python Code for Plotting}
-\begin{lstlisting}[language=Python]
-
-
-# Plot sides
-plt.plot(AB[0,:],AB[1,:], label='AB')
-plt.plot(BC[0,:],BC[1,:], label='BC')
-plt.plot(CD[0,:],CD[1,:], label='CD')
-plt.plot(DA[0,:],DA[1,:], label='DA')
-# Scatter points
-plt.scatter(coords[0,:],coords[1,:])
-plt.text(A[0],A[1],"A(0,0)") 
-plt.text(B[0],B[1],"B(0,5)")
-plt.text(C[0],C[1],"C(3,5)")
-plt.text(D[0],D[1],"D(3,0)")
-
-\end{lstlisting}
-
-\end{frame}
-\begin{frame}[fragile]
-\frametitle{Python Code for Plotting}
-\begin{lstlisting}[language=Python]
-plt.xlabel('$x$')
-plt.ylabel('$y$')
-plt.legend(loc='best')
-plt.grid(True)
-plt.axis('equal')
-
-plt.savefig('../figs/img.png')
-plt.show()
-\end{lstlisting}
-
-\end{frame}
 \end{document}
