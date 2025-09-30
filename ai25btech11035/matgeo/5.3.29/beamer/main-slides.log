@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.7.30)  30 SEP 2025 02:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.7.30)  30 SEP 2025 03:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1539,14 +1539,17 @@ LaTeX Font Info:    Trying to load font information for OT1+lmss on input line
 86.
 (/usr/share/texmf/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) (./main-slides.aux
+
+LaTeX Warning: Label `fig:1' multiply defined.
+
 )
-No file main-slides.aux.
 \openout1 = `main-slides.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 86.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 86.
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 86.
@@ -1642,6 +1645,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package hyperref Info: Link coloring OFF on input line 86.
+
+(./main-slides.out) (./main-slides.out)
 \@outlinefile=\write7
 \openout7 = `main-slides.out'.
 
@@ -1728,15 +1733,12 @@ erthousand on input line 86.
 LaTeX Info: Redefining \ohm on input line 86.
 Package gensymb Info: Using \textohm for \ohm on input line 86.
 Package gensymb Info: Using \textmu for \micro on input line 86.
-
-No file main-slides.nav.
-[1
+ (./main-slides.nav) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 9
 4.
-
-(/usr/share/texmf/tex/latex/lm/omllmm.fd
+ (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
@@ -1925,22 +1927,16 @@ l.299 \end{frame}
 
  (./main-slides.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `main-slides.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main-slides.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `main-slides.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 57060 strings out of 476091
- 1353943 string characters out of 5794081
+ 57101 strings out of 476091
+ 1354326 string characters out of 5794081
  2325414 words of memory out of 5000000
- 76399 multiletter control sequences out of 15000+600000
+ 76432 multiletter control sequences out of 15000+600000
  555078 words of font info for 77 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  128i,25n,122p,1179b,1595s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1955,7 +1951,7 @@ fb></usr/share/texmf/fonts/type1/public/lm/lmsso8.pfb></usr/share/texmf/fonts/t
 ype1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/txfonts/txsya.pfb>
-Output written on main-slides.pdf (14 pages, 175827 bytes).
+Output written on main-slides.pdf (14 pages, 176044 bytes).
 PDF statistics:
  471 PDF objects out of 1000 (max. 8388607)
  414 compressed objects within 5 object streams

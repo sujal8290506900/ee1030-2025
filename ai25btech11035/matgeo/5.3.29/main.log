@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.7.30)  30 SEP 2025 02:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.7.30)  30 SEP 2025 03:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1684,13 +1684,13 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 4
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
-)
-No file main.aux.
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 47.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 47.
+
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
@@ -1858,14 +1858,15 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring OFF on input line 47.
+ (./main.out)
+(./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
 \c@lstlisting=\count397
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 70
 .
-
-(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 7
@@ -1909,57 +1910,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
  []
 
-
-LaTeX Warning: File `figs/img.png' not found on input line 110.
-
-
-! Package pdftex.def Error: File `figs/img.png' not found: using draft setting.
-
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.110 ...hics[width=0.7\columnwidth]{figs/img.png}
-                                                  
-? 
-LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
-110.
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txtt.fd
-File: ot1txtt.fd 2000/12/15 v3.1
-) [2] (./main.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+<figs/img.png, id=48, 578.16pt x 433.62pt>
+File: figs/img.png Graphic file (type png)
+<use figs/img.png>
+Package pdftex.def Info: figs/img.png  used on input line 110.
+(pdftex.def)             Requested size: 254.9356pt x 191.19699pt.
+[2 <./figs/img.png>] (./main.aux)
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 52238 strings out of 476091
- 1233750 string characters out of 5794081
+ 52175 strings out of 476091
+ 1232697 string characters out of 5794081
  1869330 words of memory out of 5000000
- 71787 multiletter control sequences out of 15000+600000
- 579093 words of font info for 168 fonts, out of 8000000 for 9000
+ 71735 multiletter control sequences out of 15000+600000
+ 578817 words of font info for 167 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  109i,24n,107p,1194b,883s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfon
-ts/txtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 55022 bytes).
+public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
+mb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (2 pages, 79764 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
+ 91 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  9 named destinations out of 1000 (max. 500000)
- 109 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 114 words of extra memory for PDF output out of 10000 (max. 10000000)
 
