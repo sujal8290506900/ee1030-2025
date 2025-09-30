@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.7.30)  30 SEP 2025 10:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.7.30)  30 SEP 2025 11:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -940,7 +940,7 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count366
 \l__pdf_internal_box=\box127
 )
-No file main-slides.aux.
+(./main-slides.aux)
 \openout1 = `main-slides.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
@@ -961,6 +961,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 97.
 LaTeX Font Info:    ... okay on input line 97.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 97.
 LaTeX Font Info:    ... okay on input line 97.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1018,6 +1019,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package hyperref Info: Link coloring OFF on input line 97.
+
+(./main-slides.out) (./main-slides.out)
 \@outlinefile=\write5
 \openout5 = `main-slides.out'.
 
@@ -1102,15 +1105,12 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count373
-
-No file main-slides.nav.
-[1
+ (./main-slides.nav) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Trying to load font information for U+msa on input line 108
 .
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 108
@@ -1150,7 +1150,7 @@ Overfull \vbox (8.28569pt too high) detected at line 133
 \openout4 = `main-slides.vrb'.
 
  (./main-slides.vrb
-<../figs/img.png, id=44, 722.7pt x 578.16pt>
+<../figs/img.png, id=47, 722.7pt x 578.16pt>
 File: ../figs/img.png Graphic file (type png)
 <use ../figs/img.png>
 Package pdftex.def Info: ../figs/img.png  used on input line 3.
@@ -1168,23 +1168,14 @@ Package pdftex.def Info: ../figs/img.png  used on input line 3.
 \openout8 = `main-slides.snm'.
 
  (./main-slides.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main-slides.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main-slides.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  65A763A6E0F28B718309D517F6484606;83.
+Package rerunfilecheck Info: File `main-slides.out' has not changed.
+(rerunfilecheck)             Checksum: 65A763A6E0F28B718309D517F6484606;83.
  ) 
 Here is how much of TeX's memory you used:
- 26776 strings out of 476091
- 514319 string characters out of 5794081
+ 26804 strings out of 476091
+ 514596 string characters out of 5794081
  1861330 words of memory out of 5000000
- 46609 multiletter control sequences out of 15000+600000
+ 46629 multiletter control sequences out of 15000+600000
  520224 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,131p,405b,518s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1197,10 +1188,10 @@ t/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy8.pfb>
-Output written on main-slides.pdf (5 pages, 137596 bytes).
+Output written on main-slides.pdf (5 pages, 137812 bytes).
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
+ 100 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  13 named destinations out of 1000 (max. 500000)
- 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
