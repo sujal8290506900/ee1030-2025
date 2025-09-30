@@ -1,0 +1,301 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{mathtools}
+\usepackage{txfonts}
+\usepackage{tkz-euclide}
+\usepackage{listings}
+\usepackage{adjustbox}
+\usepackage{array}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{gvv}
+\usepackage{lmodern}
+\usepackage{circuitikz}
+\usepackage{tikz}
+\lstset{literate={·}{{$\cdot$}}1 {λ}{{$\lambda$}}1 {→}{{$\to$}}1}
+\usepackage{graphicx}
+
+\setbeamertemplate{page number in head/foot}[totalframenumber]
+
+\usepackage{tcolorbox}
+\tcbuselibrary{minted,breakable,xparse,skins}
+
+
+
+\definecolor{bg}{gray}{0.95}
+\DeclareTCBListing{mintedbox}{O{}m!O{}}{%
+  breakable=true,
+  listing engine=minted,
+  listing only,
+  minted language=#2,
+  minted style=default,
+  minted options={%
+    linenos,
+    gobble=0,
+    breaklines=true,
+    breakafter=,,
+    fontsize=\small,
+    numbersep=8pt,
+    #1},
+  boxsep=0pt,
+  left skip=0pt,
+  right skip=0pt,
+  left=25pt,
+  right=0pt,
+  top=3pt,
+  bottom=3pt,
+  arc=5pt,
+  leftrule=0pt,
+  rightrule=0pt,
+  bottomrule=2pt,
+  toprule=2pt,
+  colback=bg,
+  colframe=orange!70,
+  enhanced,
+  overlay={%
+    \begin{tcbclipinterior}
+    \fill[orange!20!white] (frame.south west) rectangle ([xshift=20pt]frame.north west);
+    \end{tcbclipinterior}},
+  #3,
+}
+\lstset{
+    language=C,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    stringstyle=\color{orange},
+    commentstyle=\color{green!60!black},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    breaklines=true,
+    showstringspaces=false,
+}
+%------------------------------------------------------------
+%This block of code defines the information to appear in the
+%Title page
+\title %optional
+{5.7.8}
+\date{September 5,2025}
+%\subtitle{A short story}
+
+\author % (optional)
+{AI25BTECH11035-SUJAL RAJANI}
+\begin{document}
+\frame{\titlepage}
+\begin{frame}{Question}
+ Given that $\vec{A}$ =$\myvec{\alpha&\beta\\\gamma&-\alpha}$ and $\vec{A}^2$=3$\vec{I}$,then
+  \\
+  (a) $1+\alpha^2+\beta\gamma$ =0
+  \\
+  (b) $1-\alpha^2-\beta\gamma$ =0
+  \\
+  (c) $3-\alpha^2-\beta\gamma$ =0
+  \\
+  (d) $3+\alpha^2+\beta\gamma$ =0
+\end{frame}
+
+\begin{frame}{Theoretical Solution}
+as mentioned in the question :
+\\
+\begin{align*}
+   \vec{A} =\myvec{\alpha&\beta\\\gamma&-\alpha}
+   \end{align*}
+\begin{equation}
+   \vec{A}^2 &=3\vec{I}.
+\end{equation}
+\\
+The characteristic equation of $\vec{A}$ is:
+\begin{align}
+\left|\myvec{
+\alpha-\lambda & \beta  \\
+\gamma & -\alpha-\lambda  
+}\right| &=0 ,
+\end{align}
+which expands to
+\begin{align}
+\lambda^2 -  \alpha^2 -\beta\gamma= 0.
+\end{align}
+\end{frame}
+\begin{frame}{Theoretical Solution}
+    By Carlyle-Hamilton theorem
+    \\
+    \begin{align*}
+    \vec{A}^2=(\alpha^2 +\beta\gamma)\vec{I}
+    \end{align*}
+    by equation 1 :
+    \\
+    \begin{align}
+     3\vec{I}=(\alpha^2 +\beta\gamma)\vec{I}
+     \end{align}
+     \begin{align*}
+     3=\alpha^2 + \beta\gamma
+      \end{align*}.
+     option c is the correct option .
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]
+    \frametitle{C Code -Finding Solution for the system of Equations}
+
+    \begin{lstlisting}[language=C]
+#include <stdio.h>
+
+void rref_solver(double aug[2][3], double solution[2]) {
+    // Normalize first row (pivot = aug[0][0])
+    double pivot = aug[0][0];
+    for (int j = 0; j < 3; j++) {
+        aug[0][j] /= pivot;
+    }
+    // Eliminate below pivot
+    double factor = aug[1][0];
+    for (int j = 0; j < 3; j++) {
+        aug[1][j] -= factor * aug[0][j];
+    }
+
+
+
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{C Code -Finding Solution for the system of Equations}
+
+    \begin{lstlisting}[language=C]
+    // Normalize second row (pivot = aug[1][1])
+    pivot = aug[1][1];
+    for (int j = 0; j < 3; j++) {
+        aug[1][j] /= pivot;
+    }
+    // Eliminate above pivot
+    factor = aug[0][1];
+    for (int j = 0; j < 3; j++) {
+        aug[0][j] -= factor * aug[1][j];
+    }
+    // Extract solution
+    solution[0] = aug[0][2]; // x
+    solution[1] = aug[1][2]; // y
+}
+
+
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Python+C code}
+
+    \begin{lstlisting}[language=Python]
+import ctypes
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib as mp
+mp.use("TkAgg")
+# Load the shared C library
+lib = ctypes.CDLL("./liblineq_solver.so")
+# Define argument and return types
+lib.rref_solver.argtypes = [ctypes.c_double * 6, ctypes.c_double * 2]
+# Create augmented matrix for system:
+aug = (ctypes.c_double * 6)(1, 2, 6,   2, -5, 12)  # Flattened 2x3
+solution = (ctypes.c_double * 2)()
+lib.rref_solver(aug, solution)
+# Convert result to numpy vector (ensure flat)
+x_sol = np.array([solution[0], solution[1]], dtype=float).flatten()
+print("Solution vector from C:", x_sol)
+
+
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Python+C code}
+
+    \begin{lstlisting}[language=Python]
+# plot
+x_vals = np.linspace(-2, 10, 400)
+y1 = (6 - x_vals) / 2
+y2 = (12 - 2*x_vals) / -5
+
+plt.plot(x_vals, y1, label=r"$x+3y=6$")
+plt.plot(x_vals, y2, label=r"$2x-3y=12$")
+
+plt.scatter(x_sol[0], x_sol[1], color="red", zorder=5)
+plt.text(float(x_sol[0])+0.2, float(x_sol[1]), f"({x_sol[0]:.1f}, {x_sol[1]:.1f})", color="red")
+
+
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Python+C code}
+
+    \begin{lstlisting}[language=Python]
+plt.xlabel("x")
+plt.ylabel("y")
+plt.title("Garphical solution of the Linear system")
+plt.axhline(0, color="black", linewidth=0.8)
+plt.axvline(0, color="black", linewidth=0.8)
+plt.legend()
+plt.grid(True)
+plt.show()
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Python code}
+    \begin{lstlisting}[language=Python]
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib as mp
+mp.use("TkAgg")
+
+A=np.array([[1,2],[2,-5]],dtype=float)
+b=np.array([6,12], dtype=float)
+
+x=np.linalg.solve(A,b)
+print("Solution vector for the system of equations:",x)
+    \end{lstlisting}   
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Python code}
+    \begin{lstlisting}[language=Python]
+# Making a plot
+x_vals = np.linspace(-2, 10, 400)
+
+# Rearranged equations to express y in terms of x
+y1 = (6 - x_vals) / 2        # from x + 3y = 6
+y2 = (12 - 2*x_vals) / -5    # from 2x - 3y = 12
+
+# Plot lines
+plt.plot(x_vals, y1, label=r"$x + 2y = 6$")
+plt.plot(x_vals, y2, label=r"$2x - 5y = 12$")
+
+# Mark solution
+plt.scatter(x[0], x[1], color="red", zorder=5)
+plt.text(x[0]+0.2, x[1], f"({x[0]:.1f}, {x[1]:.1f})", color="red")
+    \end{lstlisting}
+    
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Python code}
+    \begin{lstlisting}[language=Python]
+# Formatting
+plt.xlabel("x")
+plt.ylabel("y")
+plt.title("Graphical Solution of the Linear System")
+plt.axhline(0, color='black', linewidth=0.8)
+plt.axvline(0, color='black', linewidth=0.8)
+plt.legend()
+plt.grid(True)
+plt.show()
+    \end{lstlisting}  
+\end{frame}
+
+
+
+\end{document}

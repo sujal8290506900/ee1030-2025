@@ -1,0 +1,107 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage{caption}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}     
+\usepackage{xparse}
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+%\newtheorem{theorem}{Theorem}[section]
+%\newtheorem{theorem}{Theorem}[section]
+%\newtheorem{problem}{Problem}
+%\newtheorem{proposition}{Proposition}[section]
+%\newtheorem{lemma}{Lemma}[section]
+%\newtheorem{corollary}[theorem]{Corollary}
+%\newtheorem{example}{Example}[section]
+%\newtheorem{definition}[problem]{Definition}
+
+\begin{document}
+
+\title{5.7.8}
+\author{AI25BTECH11035 - SUJAL RAJANI}
+% \maketitle
+% \newpage
+% \bigskip
+%\begin{document}
+{\let\newpage\relax\maketitle}
+%\renewcommand{\thefigure}{\theenumi}
+%\renewcommand{\thetable}{\theenumi}
+% \newpage
+% \bigskip
+\textbf{QUESTION}
+\\
+  Given that $\vec{A}$ =$\myvec{\alpha&\beta\\\gamma&-\alpha}$ and $\vec{A}^2$=3$\vec{I}$,then
+  \\
+  (a) $1+\alpha^2+\beta\gamma$ =0
+  \\
+  (b) $1-\alpha^2-\beta\gamma$ =0
+  \\
+  (c) $3-\alpha^2-\beta\gamma$ =0
+  \\
+  (d) $3+\alpha^2+\beta\gamma$ =0
+  \\
+\textbf{solution}
+as mentioned in the question :
+\\
+\begin{align*}
+   \vec{A} =\myvec{\alpha&\beta\\\gamma&-\alpha}
+   \end{align*}
+\begin{equation}
+   \vec{A}^2 &=3\vec{I}.
+\end{equation}
+\\
+The characteristic equation of $\vec{A}$ is:
+\begin{align}
+\left|\myvec{
+\alpha-\lambda & \beta  \\
+\gamma & -\alpha-\lambda  
+}\right| &=0 ,
+\end{align}
+which expands to
+\begin{align}
+\lambda^2 -  \alpha^2 -\beta\gamma= 0.
+\end{align}
+ By Carlyle-Hamilton theorem
+    \\
+    \begin{align*}
+    \vec{A}^2=(\alpha^2 +\beta\gamma)\vec{I}
+    \end{align*}
+    by equation 1 :
+    \\
+    \begin{align}
+     3\vec{I}=(\alpha^2 +\beta\gamma)\vec{I}
+     \end{align}
+     \begin{align*}
+     3=\alpha^2 + \beta\gamma
+      \end{align*}.
+     option c is the correct option .
+     
+\end{document}
