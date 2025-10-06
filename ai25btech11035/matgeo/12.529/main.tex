@@ -1,0 +1,120 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage{caption}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}     
+\usepackage{xparse}
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+%\newtheorem{theorem}{Theorem}[section]
+%\newtheorem{theorem}{Theorem}[section]
+%\newtheorem{problem}{Problem}
+%\newtheorem{proposition}{Proposition}[section]
+%\newtheorem{lemma}{Lemma}[section]
+%\newtheorem{corollary}[theorem]{Corollary}
+%\newtheorem{example}{Example}[section]
+%\newtheorem{definition}[problem]{Definition}
+
+\begin{document}
+
+\title{12.529}
+\author{AI25BTECH11035 - SUJAL RAJANI}
+% \maketitle
+% \newpage
+% \bigskip
+%\begin{document}
+{\let\newpage\relax\maketitle}
+%\renewcommand{\thefigure}{\theenumi}
+%\renewcommand{\thetable}{\theenumi}
+% \newpage
+% \bigskip
+
+
+
+\textbf{Question:}
+
+Let $\mathbf{M}$ be a $3 \times 3$ matrix and suppose that $1, 2$ and $3$ are the eigenvalues of $\mathbf{M}$. If
+\[
+\mathbf{M}^{-1} = \frac{\mathbf{M}^2 - \mathbf{M} + \mathbf{I}_3}{\alpha}
+\]
+for some scalar $\alpha \neq 0$, then $\alpha$ is equal to \underline{\qquad}.
+
+\vspace{1cm}
+
+\textbf{Solution:}
+
+Let $\lambda$ be an eigenvalue of $\mathbf{M}$, and $\mathbf{v}$ the corresponding eigenvector: 
+\[
+\mathbf{M} \mathbf{v} = \lambda \mathbf{v}
+\]
+Applying both sides to the given identity:
+\[
+\mathbf{M}^{-1} \mathbf{v} = \frac{\mathbf{M}^2 - \mathbf{M} + \mathbf{I}_3}{\alpha} \mathbf{v}
+\]
+Since polynomial expressions in $\mathbf{M}$ act on eigenvectors by substituting $\lambda$ for $\mathbf{M}$, we have:
+\[
+\mathbf{M}^2 \mathbf{v} = \lambda^2 \mathbf{v}, \qquad \mathbf{I}_3 \mathbf{v} = \mathbf{v}
+\]
+Thus,
+\[
+\mathbf{M}^{-1} \mathbf{v} = \frac{\lambda^2 - \lambda + 1}{\alpha} \mathbf{v}
+\]
+But 
+\[
+\mathbf{M}^{-1} \mathbf{v} = \frac{1}{\lambda} \mathbf{v}
+\]
+Therefore,
+\[
+\frac{1}{\lambda} = \frac{\lambda^2 - \lambda + 1}{\alpha}
+\implies
+\alpha = \lambda (\lambda^2 - \lambda + 1)
+\]
+For the three eigenvalues, compute $\alpha$:
+
+For $\lambda = 1$:
+\[
+\alpha = 1 \times (1^2 - 1 + 1) = 1
+\]
+For $\lambda = 2$:
+\[
+\alpha = 2 \times (2^2 - 2 + 1) = 2 \times (4 - 2 + 1) = 6
+\]
+For $\lambda = 3$:
+\[
+\alpha = 3 \times (9 - 3 + 1) = 3 \times 7 = 21
+\]
+Thus, there is no single $\alpha$ that satisfies all three cases, so the expression does not hold for all eigenvalues simultaneously.
+
+\end{document}
+
+\end{document}
+
+\end{document}
