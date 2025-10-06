@@ -1,0 +1,187 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage{caption}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}     
+\usepackage{xparse}
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+%\newtheorem{theorem}{Theorem}[section]
+%\newtheorem{theorem}{Theorem}[section]
+%\newtheorem{problem}{Problem}
+%\newtheorem{proposition}{Proposition}[section]
+%\newtheorem{lemma}{Lemma}[section]
+%\newtheorem{corollary}[theorem]{Corollary}
+%\newtheorem{example}{Example}[section]
+%\newtheorem{definition}[problem]{Definition}
+
+\begin{document}
+
+\title{12.113}
+\author{AI25BTECH11035 - SUJAL RAJANI}
+% \maketitle
+% \newpage
+% \bigskip
+%\begin{document}
+{\let\newpage\relax\maketitle}
+%\renewcommand{\thefigure}{\theenumi}
+%\renewcommand{\thetable}{\theenumi}
+% \newpage
+% \bigskip
+
+
+\textbf{Problem:} \\
+The area of the region bounded by the parabola \( y = x^2 + 1 \) and the straight line \( x + y = 3 \) is:
+
+\begin{enumerate}
+    \item[\textbf{a)}] \( \frac{59}{6} \) 
+    \item[\textbf{b)}] \( \frac{9}{2} \)
+    \item[\textbf{c)}] \( \frac{10}{3} \)
+    \item[\textbf{d)}] \( \frac{7}{6} \)
+\end{enumerate}
+
+\textbf{Solution:}
+
+\textbf{Step 1: Write equations in matrix (quadratic) form}
+\begin{align*}
+y &= x^2 + 1 \implies x^2 - y + 1 = 0 \\
+\text{In matrix form:} \quad \vec{x}^T 
+\begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}
+\vec{x} + 2
+\begin{pmatrix} 0 \\ -\frac{1}{2} \end{pmatrix}^T
+\vec{x} + 1 = 0
+\end{align*}
+
+\textbf{Step 2: Parametric representation of the line:} \\
+\( x + y = 3 \implies y = 3 - x \) \\
+Let the line in parametric vector form be:
+\[
+\vec{X} = \begin{pmatrix} 0 \\ 3 \end{pmatrix} + \lambda \begin{pmatrix} 1 \\ -1 \end{pmatrix}
+\]
+So,
+\[
+x = \lambda,\quad y = 3 - \lambda
+\]
+
+\textbf{Step 3: Substitute into the matrix equation and solve for \(\lambda\)}
+
+Substitute \( x = \lambda,\, y = 3 - \lambda \) into the matrix equation.
+\begin{align*}
+\left(
+\begin{pmatrix}
+\lambda \\
+3 - \lambda
+\end{pmatrix}
+\right)^T 
+\begin{pmatrix}
+1 & 0 \\
+0 & 0
+\end{pmatrix}
+\begin{pmatrix}
+\lambda \\
+3 - \lambda
+\end{pmatrix}
++ 2
+\begin{pmatrix}
+0 \\
+-\frac{1}{2}
+\end{pmatrix}^T 
+\begin{pmatrix}
+\lambda \\
+3 - \lambda
+\end{pmatrix}
++ 1 = 0
+\end{align*}
+Calculate each component:
+\begin{align*}
+& \begin{pmatrix}
+\lambda \\
+3 - \lambda
+\end{pmatrix}^T 
+\begin{pmatrix}
+1 & 0 \\
+0 & 0
+\end{pmatrix}
+\begin{pmatrix}
+\lambda \\
+3 - \lambda
+\end{pmatrix}
+= \lambda^2 \\
+& 2\begin{pmatrix}
+0 \\
+-\frac{1}{2}
+\end{pmatrix}^T 
+\begin{pmatrix}
+\lambda \\
+3 - \lambda
+\end{pmatrix}
+= 2 \cdot \left(0 \cdot \lambda + \left(-\frac{1}{2}\right) (3 - \lambda) \right)
+= - (3 - \lambda) = -3 + \lambda
+\end{align*}
+So, the equation becomes:
+\[
+\lambda^2 - 3 + \lambda + 1 = 0 
+\implies \lambda^2 + \lambda - 2 = 0
+\]
+Solving this quadratic equation:
+\[
+(\lambda + 2)(\lambda - 1) = 0 \implies \lambda = -2,\, 1
+\]
+So, the intersection points are:
+\[
+\vec{X} = \myvec{-2\\ 5} , \vec{X} = \myvec{1\\2}
+\]
+
+\textbf{Step 4: Area Calculation}
+
+The area between the curves can be written as:
+\[
+A = \int_{-2}^{1} \left[ (3-x) - (x^2 + 1) \right] \, dx = \int_{-2}^{1} (2 - x - x^2)\, dx
+\]
+
+Integrate:
+\begin{align*}
+A &= \int_{-2}^{1} (2 - x - x^2)\,dx \\
+&= \left[ 2x - \frac{1}{2}x^2 - \frac{1}{3}x^3 \right]_{-2}^{1}\\
+&= \left(2(1) - \frac{1}{2}(1)^2 - \frac{1}{3}(1)^3\right) - \left(2(-2) - \frac{1}{2}(-2)^2 - \frac{1}{3}(-2)^3\right) \\
+&= (2 - 0.5 - 0.333) - (-4 - 2 + 2.666) \\
+&= 1.167 - (-3.334) \\
+&= 4.5 = \frac{9}{2}
+\end{align*}
+
+\textbf{Final Answer:}
+\[
+\boxed{\frac{9}{2}}
+\]
+
+\end{document}
+
+\end{document}
