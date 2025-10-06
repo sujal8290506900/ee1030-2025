@@ -3,6 +3,8 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 %\usepackage{advdate}
+%\usepackage{gvv}
+%\usepackage{gvv-book}
 \usepackage{graphicx}
 \usepackage{adjustbox}
 \usepackage{subcaption}
@@ -14,6 +16,8 @@
 \def\UrlBreaks{\do\/\do-}
 \usetheme{Boadilla}
 \usecolortheme{lily}
+\let\vec\mathbf
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
 \setbeamertemplate{footline}
 {
   \leavevmode%
@@ -54,7 +58,7 @@
 	%\newcommand{\solution}[2]{\vec{Solution:}{#1}}
 %\newcommand{\solution}{\noindent \vec{Solution: }}
 \providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
-\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+
 
 
 \lstset{
@@ -89,7 +93,7 @@ columns=fullflexible
   showstringspaces=false
 }
 
-\title{Problem 1.8.11}
+\title{Problem 1.4.5}
 \author{Sujal Rajani}
 
 \date{\today} 
@@ -99,43 +103,66 @@ columns=fullflexible
 \titlepage
 \end{frame}
 
-\section*{Outline}
-\begin{frame}
-\tableofcontents
-\end{frame}
-\section{Question}
+
+
 \begin{frame}{Question}
 \textbf{Question}:
 
 
-\noindent AOBC is a rectangle whose three vertices are vertices $\vec{A}(0,3),\vec{O}(0,0),\vec{B}(5,0)$. The 
-length of diagonal is \underline{\hspace{2cm}}.   
+\noindent Find the coordinates of the point $\vec{P}$ on AD such that AP : PD = 2 : 1.    
+\end{frame}
+
+\begin{frame}{Solution}
+\textbf{Solution:} 
+
+As nothing is mentioned in the question about the coordinates of A and D , so we are assuming the coordinates of A as (2,2) ,D as (-1,-1) .
+\begin{align}
+			\vec A = \myvec{2\\2},\vec D = \myvec{-1\\-1}.
+\end{align}
+as mentioned in the question $\vec{P}$ is dividing the join of A and D in $2:1$.
+
+so for finding the position vector of $\vec{P}$ we are using section formula 
+\end{frame} 
+
+\begin{frame}{section formula }
+    \textbf{section formula }
+
+If $\vec{D}$ divides BC in the ratio k : 1
+\begin{align*}
+     \vec{D}=\dfrac{k\vec{C}+\vec{B}}{k+1}
+\end{align*}
+
+\end{frame}
+\begin{frame}{OBTAINING COORDINATES}
+
+\quad k=2
+
+    the position vector of $\vec{P}$ is : 
+    \\
+   \begin{align*}
+     \vec{P}=\dfrac{2\vec{D}+\vec{A}}{2+1}
+\end{align*}
+   In matrix form:
+\begin{align}
+\vec{P} &= \frac{1}{3}\,\myvec{\vec{D} & \vec{A}}\myvec{2 \\ 1}
+\end{align}
+\end{frame}
+\begin{frame}{Solution}
+\begin{align}
+\vec{P}
+&= \frac{1}{3}\,
+   \myvec{-1 & 2\\ -1 & 2}
+   \myvec{2 \\ 1} \label{eq:R-sub1} \\[6pt]
+&= \frac{1}{3}\,
+   \myvec{0 \\ 0} 
+   \\
+&= \myvec{{0} \\{0}}
+\end{align}
+
 
 \end{frame}
 
     
-
-\section{Solution}
-\begin{frame}{Solution}
-\textbf{Solution:} 
-\\
-From the given information,
-\begin{align}
-		\vec{A} = \myvec{0\\3},\vec{O} = \myvec{0\\0},\vec{B} = \myvec{5\\0} 
-\end{align}
-Then the direction vector  of the diagonal AB is :
-
-\begin{align}
-    \vec{A}-\vec{B}=\myvec{0\\3}-\myvec{5\\0}=\myvec{-5\\3},
-    \\
-  \end{align}
-the length of the diagonal is :
-\begin{align}
-    (\vec{A}-\vec{B})^T(\vec{A}-\vec{B})=34    
-     \Rightarrow AB=||\vec{A}-\vec{B}||=\sqrt{34}	 
-    \end{align}
-    \end{frame}
-    \subsection{plot}
        \begin{frame}[fragile]
     \begin{figure}[H]
     \centering
@@ -149,51 +176,32 @@ the length of the diagonal is :
 \frametitle{C Code }
 \begin{lstlisting}[language=C]
 #include <stdio.h>
-#include <math.h>
-#include <stdlib.h>
-#include "libs/matfun.h"   // For createMat, freeMat
 
 int main() {
-    // Define points as column vectors
-    double **A, **B;
-    double dx, dy, diagonal;
+    // Coordinates of A and D
+    float Ax = 2.0, Ay = 2.0;
+    float Dx = -1.0, Dy = -1.0;
 
-    // Allocate 2x1 matrices for A and B
-    A = createMat(2, 1);
-    B = createMat(2, 1);
+    // Ratio AP:PD = 2:1
+    float m = 2.0, n = 1.0;
 
-    // A = (0,3), B = (5,0)
-    A[0][0] = 0;   A[1][0] = 3;
-    B[0][0] = 5;   B[1][0] = 0;
+    // Section formula: P = (m*D + n*A)/(m+n)
+    float Px = (m*Dx + n*Ax) / (m + n);
+    float Py = (m*Dy + n*Ay) / (m + n);
 
+    printf("The coordinates of point P are: (%.2f, %.2f)\n", Px, Py);
+    return 0;
+}
     
 \end{lstlisting}
 \end{frame}
 
-\begin{frame}[fragile]
-\frametitle{C Code }
-\begin{lstlisting}[language=C]
 
-    // Calculate diagonal length = ||A - B||
-    dx = A[0][0] - B[0][0];
-    dy = A[1][0] - B[1][0];
-    diagonal = sqrt(dx*dx + dy*dy);
-
-    printf("Length of diagonal AB = %.2lf\n", diagonal);
-
-    // Free matrices
-    freeMat(A, 2);
-    freeMat(B, 2);
-
-    return 0;
-}
-\end{lstlisting}
-\end{frame}
 
 \begin{frame}[fragile]
 \frametitle{Python Code for Plotting}
 \begin{lstlisting}[language=Python]
-    import math
+import math
 import sys   
 
 import numpy as np
@@ -208,10 +216,10 @@ import subprocess
 import shlex
 #end if
 
-A = np.array([0,3]).reshape(-1,1)
-B = np.array([5,0]).reshape(-1,1)
-O = np.array([0,0]).reshape(-1,1)
-C = np.array([5,3]).reshape(-1,1)
+A = np.array([2,2]).reshape(-1,1)
+P = np.array([0,0]).reshape(-1,1)
+D = np.array([-1,-1]).reshape(-1,1)
+coords = np.block([[A,P,D]])
 
 \end{lstlisting}
 
@@ -221,24 +229,18 @@ C = np.array([5,3]).reshape(-1,1)
 \frametitle{Python Code for Plotting}
 \begin{lstlisting}[language=Python]   
 
-coords = np.block([[A,B,O]])
+AP = line_gen(A,P)
+PD = line_gen(P,D)
 
-AO = line_gen(A,O)
-AB = line_gen(A,B)
-BO = line_gen(B,O)
-CO = line_gen(C,O)
-AC = line_gen(A,C)
-plt.plot(AO[0,:],AO[1,:])
-plt.plot(AB[0,:],AB[1,:])
-plt.plot(BO[0,:],BO[1,:])
-plt.plot(CO[0,:],CO[1,:])
-plt.plot(AC[0,:],AC[1,:])
+plt.plot(AP[0,:],AP[1,:])
+plt.plot(PD[0,:],PD[1,:])
+
 plt.scatter(coords[0,:],coords[1,:])
 
 
-plt.text(A[0],A[1],"A(0,3)")
-plt.text(B[0],B[1],"B(5,0)")
-
+plt.text(A[0],A[1],"A(2,2)")
+plt.text(P[0],P[1],"P(0,0)")
+plt.text(D[0],D[1],"D(-1,-1)")
 
 
 \end{lstlisting}
@@ -248,8 +250,6 @@ plt.text(B[0],B[1],"B(5,0)")
 \frametitle{Python Code for Plotting}
 \begin{lstlisting}[language=Python]   
 
-plt.text(C[0],C[1],"C(5,3)")
-plt.text(C[0],C[1],"O(0,0)")
 plt.xlabel('$x$')
 plt.ylabel('$y$')
 plt.legend(loc='best')
@@ -257,6 +257,7 @@ plt.grid() # minor
 plt.axis('equal')
 
 plt.savefig('../figs/img.png')
+
 
 
 \end{lstlisting}

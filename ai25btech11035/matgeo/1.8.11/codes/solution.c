@@ -1,35 +1,39 @@
+// example_matfun_usage.c
 #include <stdio.h>
-#include <math.h>
 #include <stdlib.h>
-#include "matfun.h"   // For createMat, freeMat
-#include "geofun.h"
+#include "matfun-1.h"
+
 int main() {
-    // Define points as column vectors
-    double **A, **B;
-    double dx, dy, diagonal;
+    int m = 2, n = 2;
 
-    // Allocate 2x1 matrices for A and B
-    A = createMat(2, 1);
-    B = createMat(2, 1);
+    // Create two 2x2 matrices
+    double *A = createMat(m, n);
+    double *B = createMat(m, n);
 
-    // A = (0,3), B = (5,0)
-    A[0][0] = 0;   A[1][0] = 3;
-    B[0][0] = 5;   B[1][0] = 0;
+    // Initialize matrix A
+    A[0] = 1.0; A[1] = 2.0;
+    A[2] = 3.0; A[3] = 4.0;
 
-    
+    // Initialize matrix B
+    B[0] = 5.0; B[1] = 6.0;
+    B[2] = 7.0; B[3] = 8.0;
 
+    printf("Matrix A:\n");
+    printMat(A, m, n);
 
+    printf("Matrix B:\n");
+    printMat(B, m, n);
 
-    // Calculate diagonal length = ||A - B||
-    dx = A[0][0] - B[0][0];
-    dy = A[1][0] - B[1][0];
-    diagonal = sqrt(dx*dx + dy*dy);
+    // Add matrices A and B
+    double *C = Matadd(A, B, m, n);
 
-    printf("Length of diagonal AB = %.2lf\n", diagonal);
+    printf("Matrix C = A + B:\n");
+    printMat(C, m, n);
 
-    // Free matrices
-    freeMat(A, 2);
-    freeMat(B, 2);
+    // Since createMat likely uses malloc, free allocated memory
+    free(A);
+    free(B);
+    free(C);
 
     return 0;
 }
