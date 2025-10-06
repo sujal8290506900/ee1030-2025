@@ -1,0 +1,131 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage{caption}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}     
+\usepackage{xparse}
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+%\newtheorem{theorem}{Theorem}[section]
+%\newtheorem{theorem}{Theorem}[section]
+%\newtheorem{problem}{Problem}
+%\newtheorem{proposition}{Proposition}[section]
+%\newtheorem{lemma}{Lemma}[section]
+%\newtheorem{corollary}[theorem]{Corollary}
+%\newtheorem{example}{Example}[section]
+%\newtheorem{definition}[problem]{Definition}
+
+\begin{document}
+
+\title{12.9}
+\author{AI25BTECH11035 - SUJAL RAJANI}
+% \maketitle
+% \newpage
+% \bigskip
+%\begin{document}
+{\let\newpage\relax\maketitle}
+%\renewcommand{\thefigure}{\theenumi}
+%\renewcommand{\thetable}{\theenumi}
+% \newpage
+% \bigskip
+\section*{Problem: Cross-Correlation Using Matrix Method}
+\textbf{Question }:
+given the wavelet , a=\{3,-2\} and b=\{1,-2\},the cross-correlation , $\phi_{ab}$,is given by .
+\\
+\\
+\textbf{solution}:
+\\
+Given the sequences
+\begin{align*}
+\vec{a} = \myvec{3\\-2}, \vec{ b} = \myvec{1\\-2}.
+\end{align*}
+The cross-correlation between $a[n]$ and $b[n]$ is defined as
+\[
+\phi_{ab}[k] = \sum_{n} a[n]\, b[n+k].
+\]
+For sequences of length $2$, the cross-correlation length is
+\[
+L = 2+2-1 = 3, \quad k = -1, 0, 1.
+\]
+
+\subsection*{Matrix Representation}
+
+The cross-correlation can be represented as a matrix multiplication:
+\[
+\boldsymbol{{\phi}_{ab}}=
+\myvec{
+\phi_{ab}[-1] \\[0.4em]
+\phi_{ab}[0] \\[0.4em]
+\phi_{ab}[1]
+}
+\]
+
+\noindent
+This matrix corresponds to the shifted overlaps between $a[n]$ and $b[n]$:
+
+\begin{itemize}
+    \item First row $\rightarrow$ shift $-1$ (overlap with $b[1]$)
+    \item Second row $\rightarrow$ shift $0$ (full overlap)
+    \item Third row $\rightarrow$ shift $+1$ (overlap with $b[0]$)
+\end{itemize}
+
+\subsection*{Step-by-Step Calculation}
+
+\[
+\begin{aligned}
+\phi_{ab}[-1] &= a[0]\,b[1] = 3 \times (-2) = -6, \\
+\phi_{ab}[0]  &= a[0]\,b[0] + a[1]\,b[1] = 3\times 1 + (-2)\times (-2) = 3 + 4 = 7, \\
+\phi_{ab}[1]  &= a[1]\,b[0] = (-2)\times 1 = -2.
+\end{aligned}
+\]
+
+\subsection*{Final Answer}
+
+\[
+\boldsymbol{{\phi}_{ab}}=
+\myvec{
+\phi_{ab}[-1]\\[0.4em]
+\phi_{ab}[0]\\[0.4em]
+\phi_{ab}[1]
+}
+=
+\myvec{
+-6\\[0.4em]
+7\\[0.4em]
+-2
+}.
+\]
+
+\[
+\boxed{\phi_{ab}[k] = \{-6,\ 7,\ -2\}}
+\]
+\end{document}
+
