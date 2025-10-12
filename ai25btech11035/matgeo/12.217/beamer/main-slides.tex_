@@ -121,46 +121,47 @@ we represent the partial derivative as :
 \end{align*} 
 \\
  the directional derivative of \(f(x, y)\) in the direction of the unit vector $\vec{u}$ =  \myvec{a\\ b} is
-\[
+\begin{align}
 D_{\mathbf{u}} f(x, y) = f_x(x, y)a + f_y(x, y)b,
-\]
+\end{align}
 and in three dimensions,
-\[
-D_{\mathbf{u}} F(x, y, z) = \vec{\nabla F(x, y, z)}^\top  \vec{u},
-\]
+\begin{align}
+    D_{\mathbf{u}} F(x, y, z) = \vec{\nabla F(x, y, z)}^\top  \vec{u},
+\end{align}
 where $\vec{\nabla F}$ is the gradient of \(F\).
      \end{frame}
      \begin{frame}{ Step-by-Step Calculation}    
 \subsection*{Step 2: Find the Gradient}
 
 Let
-\[
-F(x, y, z) = x^2 + \frac{y^2}{4} + \frac{z^2}{9}.
-\]
+\begin{align}
+    F(x, y, z) = x^2 + \frac{y^2}{4} + \frac{z^2}{9}.
+\end{align}
 Compute the gradient:
-\[
-\vec{\nabla F} = \left( \frac{\partial F}{\partial x}, \frac{\partial F}{\partial y}, \frac{\partial F}{\partial z} \right)^\top
+\begin{align}
+    \vec{\nabla F} = \left( \frac{\partial F}{\partial x}, \frac{\partial F}{\partial y}, \frac{\partial F}{\partial z} \right)^\top
 = \myvec{2x& \frac{y}{2}& \frac{2z}{9}}^\top
-\]
+\end{align}
+
 
 At \(P(1,2,3)\):
-\begin{align*}
+\begin{align}
 \vec{\nabla F(1,2,3)} =  \myvec{2&1&\frac{2}{3}}^\top
-\end{align*}
+\end{align}
      \end{frame}
      \begin{frame}{ Step-by-Step Calculation}    
 \textbf{Step 3: Unit Direction Vector}
 \\
 The position vector from the origin to the point \(P(1,2,3)\) is
-\begin{align*}
+\begin{align}
     \vec{P}= \myvec{1\\2\\3}
-\end{align*}
+\end{align}
 To get the unit vector,
-\begin{align*}
+\begin{align}
 ||\vec{P}||^2 =\vec{P}^\top\vec{P}=1^2 + 2^2 + 3^2 = {14} 
 \\
 \vec{\hat{P}}=\dfrac{\vec{P}}{||\vec{P}||}
-\end{align*}
+\end{align}
 
 So,
 \[
@@ -172,16 +173,14 @@ So,
 \subsection*{Step 4: Directional Derivative Formula and Calculation}
 
 By the theorem :
-\[
-D_{\mathbf{u}} F = \vec{{\nabla F}}^\top  \vec{\hat{P}}
-\]
-\[
-=  \frac{2}{\sqrt{14}} + \frac{2}{\sqrt{14}} +  \frac{2}{\sqrt{14}}
-\]
-\[
-= \frac{6}{\sqrt{14}}
-\]
-
+\begin{align}
+ D_{\mathbf{u}} F = \vec{{\nabla F}}^\top  \vec{\hat{P}}   
+\end{align}
+\begin{align}
+    =  \frac{2}{\sqrt{14}} + \frac{2}{\sqrt{14}} +  \frac{2}{\sqrt{14}}
+    \\
+    = \frac{6}{\sqrt{14}}
+\end{align}
 \subsection*{Final Answer}
 \[
 \boxed{ \frac{6}{\sqrt{14}} }
