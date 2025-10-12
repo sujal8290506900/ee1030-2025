@@ -106,13 +106,13 @@ columns=fullflexible
 The area of the region bounded by the parabola \( y = x^2 + 1 \) and the straight line \( x + y = 3 \) is:
 \\
 \begin{enumerate}
-    \item[\textbf{a)}] \( \frac{59}{6} \) 
+    \item[\textbf{a)}] 59/6
     \\
-    \item[\textbf{b)}] \( \frac{9}{2} \)
+    \item[\textbf{b)}] 9/2
     \\
-    \item[\textbf{c)}] \( \frac{10}{3} \)
+    \item[\textbf{c)}] 10/3
     \\
-    \item[\textbf{d)}] \( \frac{7}{6} \)
+    \item[\textbf{d)}] 7/6
 \end{enumerate}
 
 \end{frame}
@@ -121,23 +121,23 @@ The area of the region bounded by the parabola \( y = x^2 + 1 \) and the straigh
 \textbf{Solution:}
 
 \textbf{Step 1: Write equations in matrix (quadratic) form}
-\begin{align*}
+\begin{align}
 y &= x^2 + 1  \\
 \text{In matrix form:} \quad \vec{x}^T 
 \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}
 \vec{x} + 2
 \begin{pmatrix} 0 \\ -\frac{1}{2} \end{pmatrix}^T
 \vec{x} + 1 = 0
-\end{align*}
+\end{align}
 
      \end{frame}
      \begin{frame}{ Step-by-Step Calculation}    
 \textbf{Step 2: Parametric representation of the line:} \\
 \( x + y = 3 \implies y = 3 - x \) \\
 Let the line in parametric vector form be:
-\[
+\begin{align}
 \vec{X} = \begin{pmatrix} 0 \\ 3 \end{pmatrix} + \lambda \begin{pmatrix} 1 \\ -1 \end{pmatrix}
-\]
+\end{align}
 
      \end{frame}
      \begin{frame}{ Step-by-Step Calculation}    
@@ -145,7 +145,7 @@ Let the line in parametric vector form be:
 \textbf{Step 3: Substitute into the matrix equation and solve for \(\lambda\)}
 
 Substitute \( x = \lambda,\, y = 3 - \lambda \) into the matrix equation.
-\begin{align*}
+\begin{align}
 \left(
 \begin{pmatrix}
 \lambda \\
@@ -170,11 +170,11 @@ Substitute \( x = \lambda,\, y = 3 - \lambda \) into the matrix equation.
 3 - \lambda
 \end{pmatrix}
 + 1 = 0
-\end{align*}
+\end{align}
 \end{frame}
 \begin{frame}{Frame Title}
     Calculate each component:
-\begin{align*}
+\begin{align}
 & \begin{pmatrix}
 \lambda \\
 3 - \lambda
@@ -198,20 +198,20 @@ Substitute \( x = \lambda,\, y = 3 - \lambda \) into the matrix equation.
 \end{pmatrix}
 = 2 \cdot \left(0 \cdot \lambda + \left(-\frac{1}{2}\right) (3 - \lambda) \right)
 = - (3 - \lambda) = -3 + \lambda
-\end{align*}
+\end{align}
 So, the equation becomes:
-\[
+\begin{align}
 \lambda^2 - 3 + \lambda + 1 = 0 
 \implies \lambda^2 + \lambda - 2 = 0
-\]
+\end{align}
 Solving this quadratic equation:
-\[
+\begin{align}
 (\lambda + 2)(\lambda - 1) = 0 \implies \lambda = -2,\, 1
-\]
+\end{align}
 So, the intersection points are:
-\[
+\begin{align}
 \vec{X} = \myvec{-2\\ 5} , \vec{X} = \myvec{1\\2}
-\]
+\end{align}
 
 
 \end{frame}
@@ -221,19 +221,19 @@ So, the intersection points are:
 \textbf{Step 4: Area Calculation}
 
 The area between the curves can be written as:
-\[
+\begin{align}
 A = \int_{-2}^{1} \left[ (3-x) - (x^2 + 1) \right] \, dx = \int_{-2}^{1} (2 - x - x^2)\, dx
-\]
+\end{align}
 
 Integrate:
-\begin{align*}
+\begin{align}
 A &= \int_{-2}^{1} (2 - x - x^2)\,dx \\
 &= \left[ 2x - \frac{1}{2}x^2 - \frac{1}{3}x^3 \right]_{-2}^{1}\\
 &= \left(2(1) - \frac{1}{2}(1)^2 - \frac{1}{3}(1)^3\right) - \left(2(-2) - \frac{1}{2}(-2)^2 - \frac{1}{3}(-2)^3\right) \\
 &= (2 - 0.5 - 0.333) - (-4 - 2 + 2.666) \\
 &= 1.167 - (-3.334) \\
 &= 4.5 = \frac{9}{2}
-\end{align*}
+\end{align}
  \end{frame}
 
     \begin{frame}[fragile]
