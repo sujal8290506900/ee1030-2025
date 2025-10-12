@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.7.30)  6 OCT 2025 15:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.7.30)  12 OCT 2025 04:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main-slides.tex
-(./main-slides.tex
+**main-slides.tex_
+(./main-slides.tex_
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-01-16>
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
@@ -940,7 +940,14 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count366
 \l__pdf_internal_box=\box127
 )
-No file main-slides.aux.
+(./main-slides.aux
+
+LaTeX Warning: Label `figs' multiply defined.
+
+
+LaTeX Warning: Label `figs' multiply defined.
+
+)
 \openout1 = `main-slides.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
@@ -961,6 +968,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 97.
 LaTeX Font Info:    ... okay on input line 97.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 97.
 LaTeX Font Info:    ... okay on input line 97.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1018,6 +1026,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package hyperref Info: Link coloring OFF on input line 97.
+
+(./main-slides.out) (./main-slides.out)
 \@outlinefile=\write5
 \openout5 = `main-slides.out'.
 
@@ -1102,9 +1112,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count373
-
-No file main-slides.nav.
-[1
+ (./main-slides.nav) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Trying to load font information for OMS+cmss on input line 
@@ -1156,7 +1164,7 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
 \openout4 = `main-slides.vrb'.
 
  (./main-slides.vrb
-<../figs/img1.png, id=53, 578.16pt x 180.675pt>
+<../figs/img1.png, id=62, 578.16pt x 180.675pt>
 File: ../figs/img1.png Graphic file (type png)
 <use ../figs/img1.png>
 Package pdftex.def Info: ../figs/img1.png  used on input line 3.
@@ -1167,7 +1175,7 @@ Package pdftex.def Info: ../figs/img1.png  used on input line 3.
 \openout4 = `main-slides.vrb'.
 
  (./main-slides.vrb
-<../figs/img2.png, id=62, 578.16pt x 180.675pt>
+<../figs/img2.png, id=71, 578.16pt x 180.675pt>
 File: ../figs/img2.png Graphic file (type png)
 <use ../figs/img2.png>
 Package pdftex.def Info: ../figs/img2.png  used on input line 3.
@@ -1184,7 +1192,7 @@ l.5     \label{figs}
 \openout4 = `main-slides.vrb'.
 
  (./main-slides.vrb
-<../figs/img3.png, id=70, 578.16pt x 216.81pt>
+<../figs/img3.png, id=79, 578.16pt x 216.81pt>
 File: ../figs/img3.png Graphic file (type png)
 <use ../figs/img3.png>
 Package pdftex.def Info: ../figs/img3.png  used on input line 3.
@@ -1212,25 +1220,19 @@ l.5     \label{figs}
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `main-slides.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main-slides.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  E7A1630D2E47566B69E053A5E6D2F390;368.
+Package rerunfilecheck Info: File `main-slides.out' has not changed.
+(rerunfilecheck)             Checksum: E7A1630D2E47566B69E053A5E6D2F390;368.
  ) 
 Here is how much of TeX's memory you used:
- 26832 strings out of 476091
- 515154 string characters out of 5794081
- 1860330 words of memory out of 5000000
- 46640 multiletter control sequences out of 15000+600000
+ 26873 strings out of 476091
+ 515550 string characters out of 5794081
+ 1861330 words of memory out of 5000000
+ 46672 multiletter control sequences out of 15000+600000
  525057 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,131p,405b,517s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,15n,131p,406b,517s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -1242,10 +1244,10 @@ onts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
 pfb></usr/share/texmf/fonts/type1/public/cm-super/sfso0800.pfb>
-Output written on main-slides.pdf (8 pages, 130208 bytes).
+Output written on main-slides.pdf (8 pages, 130690 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
+ 141 PDF objects out of 1000 (max. 8388607)
+ 96 compressed objects within 1 object stream
  21 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 82 words of extra memory for PDF output out of 10000 (max. 10000000)
 
