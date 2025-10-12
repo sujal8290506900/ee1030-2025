@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.7.30)  1 OCT 2025 17:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.7.30)  12 OCT 2025 04:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main-slides.tex
-(./main-slides.tex
+**main-slides.tex_
+(./main-slides.tex_
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-01-16>
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
@@ -699,66 +699,269 @@ Package: amsthm 2020/05/29 v2.20.6
 \beamer@dimb=\dimen293
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty)))
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeMadrid.sty
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen294
-\ar@mcellbox=\box76
-\extrarowheight=\dimen295
-\NC@list=\toks45
-\extratabsurround=\skip65
-\backup@length=\skip66
-\ar@cellbox=\box77
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks45
+\XKV@tempa@toks=\toks46
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
-\LTleft=\skip67
-\LTright=\skip68
-\LTpre=\skip69
-\LTpost=\skip70
-\LTchunksize=\count334
-\LTcapwidth=\dimen296
-\LT@head=\box78
-\LT@firsthead=\box79
-\LT@foot=\box80
-\LT@lastfoot=\box81
-\LT@gbox=\box82
-\LT@cols=\count335
-\LT@rows=\count336
-\c@LT@tables=\count337
-\c@LT@chunks=\count338
-\LT@p@ftn=\toks46
+\XKV@depth=\count334
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box76
+)
+\tc@llx=\dimen294
+\tc@lly=\dimen295
+\tc@urx=\dimen296
+\tc@ury=\dimen297
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen298
+\adjbox@Height=\dimen299
+\adjbox@Depth=\dimen300
+\adjbox@Totalheight=\dimen301
+\adjbox@pwidth=\dimen302
+\adjbox@pheight=\dimen303
+\adjbox@pdepth=\dimen304
+\adjbox@ptotalheight=\dimen305
+
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count335
+)
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box77
+\sift@deathcycles=\count336
+\@vwid@loff=\dimen306
+\@vwid@roff=\dimen307
+))
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen308
+\captionmargin=\dimen309
+\caption@leftmargin=\dimen310
+\caption@rightmargin=\dimen311
+\caption@width=\dimen312
+\caption@indent=\dimen313
+\caption@parindent=\dimen314
+\caption@hangindent=\dimen315
+Package caption Info: beamer document class detected.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption-beamer.sto
+File: caption-beamer.sto 2022/01/06 v2.0c Adaption of the caption package to th
+e beamer document classes (AR)
+))
+\c@caption@flags=\count337
+\c@continuedfloat=\count338
+Package caption Info: hyperref package is loaded.
+Package caption Info: Hyperref support is turned off
+(caption)             because hyperref has stopped early.
+)
+\c@subfigure=\count339
+\c@subtable=\count340
+)
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip65
+\enit@outerparindent=\dimen316
+\enit@toks=\toks47
+\enit@inbox=\box78
+\enit@count@id=\count341
+\enitdp@description=\count342
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
+\c@tracingmulticols=\count343
+\mult@box=\box79
+\multicol@leftmargin=\dimen317
+\c@unbalance=\count344
+\c@collectmore=\count345
+\doublecol@number=\count346
+\multicoltolerance=\count347
+\multicolpretolerance=\count348
+\full@width=\dimen318
+\page@free=\dimen319
+\premulticols=\dimen320
+\postmulticols=\dimen321
+\multicolsep=\skip66
+\multicolbaselineskip=\skip67
+\partial@page=\box80
+\last@line=\box81
+\maxbalancingoverflow=\dimen322
+\mult@rightbox=\box82
+\mult@grightbox=\box83
+\mult@firstbox=\box84
+\mult@gfirstbox=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\@tempa=\box114
+\@tempa=\box115
+\@tempa=\box116
+\@tempa=\box117
+\@tempa=\box118
+\@tempa=\box119
+\@tempa=\box120
+\@tempa=\box121
+\c@minrows=\count349
+\c@columnbadness=\count350
+\c@finalcolumnbadness=\count351
+\last@try=\dimen323
+\multicolovershoot=\dimen324
+\multicolundershoot=\dimen325
+\mult@nat@firstbox=\box122
+\colbreak@box=\box123
+\mc@col@check@num=\count352
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count353
+\calc@Bcount=\count354
+\calc@Adimen=\dimen326
+\calc@Bdimen=\dimen327
+\calc@Askip=\skip68
+\calc@Bskip=\skip69
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count355
+\calc@Cskip=\skip70
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count356
+\l_MT_multwidth_dim=\dimen328
+\origjot=\skip71
+\l_MT_shortvdotswithinadjustabove_dim=\dimen329
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen330
+\l_MT_above_intertext_sep=\dimen331
+\l_MT_below_intertext_sep=\dimen332
+\l_MT_above_shortintertext_sep=\dimen333
+\l_MT_below_shortintertext_sep=\dimen334
+\xmathstrut@box=\box124
+\xmathstrut@dim=\dimen335
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count357
+\lst@gtempboxa=\box125
+\lst@token=\toks48
+\lst@length=\count358
+\lst@currlwidth=\dimen336
+\lst@column=\count359
+\lst@pos=\count360
+\lst@lostspace=\dimen337
+\lst@width=\dimen338
+\lst@newlines=\count361
+\lst@lineno=\count362
+\lst@maxwidth=\dimen339
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count363
+\lst@skipnumbers=\count364
+\lst@framebox=\box126
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeBoadilla.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemerose.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemedolphin.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemelily.sty)
+\c@rem=\count365
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count339
-\l__pdf_internal_box=\box83
+\l__color_backend_stack_int=\count366
+\l__pdf_internal_box=\box127
 )
-No file main-slides.aux.
+(./main-slides.aux)
 \openout1 = `main-slides.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -795,17 +998,17 @@ LaTeX Font Info:    ... okay on input line 11.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count340
-\scratchdimen=\dimen297
-\scratchbox=\box84
-\nofMPsegments=\count341
-\nofMParguments=\count342
-\everyMPshowfont=\toks47
-\MPscratchCnt=\count343
-\MPscratchDim=\dimen298
-\MPnumerator=\count344
-\makeMPintoPDFobject=\count345
-\everyMPtoPDFconversion=\toks48
+\scratchcounter=\count367
+\scratchdimen=\dimen340
+\scratchbox=\box128
+\nofMPsegments=\count368
+\nofMParguments=\count369
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count370
+\MPscratchDim=\dimen341
+\MPnumerator=\count371
+\makeMPintoPDFobject=\count372
+\everyMPtoPDFconversion=\toks50
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -815,62 +1018,64 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 11.
+Package hyperref Info: Link coloring OFF on input line 97.
+
+(./main-slides.out) (./main-slides.out)
 \@outlinefile=\write5
 \openout5 = `main-slides.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 11.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 97.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 11.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 97.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 11.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 97.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 11.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 11.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 11.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 97.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 11.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 11.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 11.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 97.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 11.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 11.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 11.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 97.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 11.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 11.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 97.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 11.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 97.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 11.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 11.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 11.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 11.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 11.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 11.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 11.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 97.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 97.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 1
-1.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 9
+7.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 1
-1.
+(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 9
+7.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 11.
+ut line 97.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -896,24 +1101,26 @@ Dictionary: translator-numbers-dictionary, Language: English
 ry-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-No file main-slides.nav.
-[1
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count373
+ (./main-slides.nav) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Trying to load font information for U+msa on input line 109
+.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 109
+.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 23.
+ut line 109.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
@@ -921,7 +1128,17 @@ thkerncmss.
 )
 [2
 
-] [3
+]
+LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10.95> not available
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 130.
+
+LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <8> not available
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 130.
+
+LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 130.
+
+ [3
 
 ] [4
 
@@ -937,7 +1154,7 @@ thkerncmss.
 \openout4 = `main-slides.vrb'.
 
  (./main-slides.vrb
-<../figs/img.png, id=247, 462.528pt x 346.896pt>
+<../figs/img.png, id=64, 462.528pt x 346.896pt>
 File: ../figs/img.png Graphic file (type png)
 <use ../figs/img.png>
 Package pdftex.def Info: ../figs/img.png  used on input line 3.
@@ -959,23 +1176,17 @@ Package pdftex.def Info: ../figs/img.png  used on input line 3.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-
-Package rerunfilecheck Warning: File `main-slides.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main-slides.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `main-slides.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 21972 strings out of 476091
- 430484 string characters out of 5794081
- 1863330 words of memory out of 5000000
- 41880 multiletter control sequences out of 15000+600000
- 519636 words of font info for 58 fonts, out of 8000000 for 9000
+ 26830 strings out of 476091
+ 515021 string characters out of 5794081
+ 1860330 words of memory out of 5000000
+ 46647 multiletter control sequences out of 15000+600000
+ 520224 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,122p,403b,563s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,15n,131p,406b,596s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texl
@@ -985,10 +1196,10 @@ t/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb>
-Output written on main-slides.pdf (9 pages, 137574 bytes).
+Output written on main-slides.pdf (9 pages, 121649 bytes).
 PDF statistics:
- 322 PDF objects out of 1000 (max. 8388607)
- 275 compressed objects within 3 object streams
+ 118 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
  20 named destinations out of 1000 (max. 500000)
- 84 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 
