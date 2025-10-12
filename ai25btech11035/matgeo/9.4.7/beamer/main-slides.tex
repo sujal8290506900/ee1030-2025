@@ -103,43 +103,42 @@ columns=fullflexible
 % Question Slide
 \begin{frame}{Question}
   \textbf{Question:} Find the roots of the following quadratic equation graphically:
-  \[
-    16x^2 - 8x + 1 = 0
-  \]
+    $16x^2 - 8x + 1 = 0$
 \end{frame}
 
 % Solution: Standard Form
 \begin{frame}{Solution}
 First, the equation is already in standard quadratic form:
-\[
-  16x^2 - 8x + 1 = 0
-\]
-
+\begin{align}
+     16x^2 - 8x + 1 = 0
+\end{align}
 \textbf{Input Variables:}
 
 The given quadratic can be written in the conic form:
-\[
-  \vec{x}^T\vec{V}\vec{x} + 2\vec{u}^T\vec{x} + f = 0
-\]
+\begin{align}
+  \vec{x}^T\vec{V}\vec{x} + 2\vec{u}^T\vec{x} + f = 0  
+\end{align}
+  
 where
-\[
-  \vec{V} = \begin{pmatrix} 16 & 0 \\ 0 & 0 \end{pmatrix}, \quad
+\begin{align}
+      \vec{V} = \begin{pmatrix} 16 & 0 \\ 0 & 0 \end{pmatrix}, \quad
   \vec{u} = \begin{pmatrix} -4 \\ 0 \end{pmatrix}, \quad
   f = 1
-\]
+\end{align}
 \end{frame}
 
 % Solution: Line Representation
 \begin{frame}{Solution}
 Since the roots correspond to intersections with the x-axis, we represent the line:
-\[
-  L : \vec{x} = \vec{h} + \kappa\vec{m}
-\]
+\begin{align}
+     L : \vec{x} = \vec{h} + \kappa\vec{m}
+\end{align}
 with
-\[
-  \vec{h} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}, \quad
+\begin{align}
+     \vec{h} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}, \quad
   \vec{m} = \begin{pmatrix} 1 \\ 0 \end{pmatrix}
-\]
+\end{align}
+ 
 \end{frame}
 
 % Table of Input Parameters
@@ -168,8 +167,8 @@ $\vec{m}$ & $\begin{pmatrix} 1 \\ 0 \end{pmatrix}$ \\
 % Intersection with Conic
 \begin{frame}{Solution}
 The points of intersection of a line with a conic are:
-\[
-  \kappa = \frac{1}{\vec{m}^T\vec{V}\vec{m}}
+\begin{align}
+     \kappa = \frac{1}{\vec{m}^T\vec{V}\vec{m}}
   \left[
     -\vec{m}^T(\vec{V}\vec{h}+\vec{u}) \pm 
     \sqrt{
@@ -177,47 +176,47 @@ The points of intersection of a line with a conic are:
       - g(\vec{h})\vec{m}^T\vec{V}\vec{m}
     }
   \right]
-\]
+\end{align}
 where
-\[
-  g(\vec{h}) = \vec{h}^T\vec{V}\vec{h} + 2\vec{u}^T\vec{h} + f
-\]
+\begin{align}
+  g(\vec{h}) = \vec{h}^T\vec{V}\vec{h} + 2\vec{u}^T\vec{h} + f  
+\end{align}
 \end{frame}
 
 % Step-by-step Calculation
 \begin{frame}{Step-by-Step Evaluation}
 \textbf{Step 1:} Compute $\vec{m}^T\vec{V}\vec{m}$
-\[
+\begin{align}
   \vec{m}^T\vec{V}\vec{m} = 16
-\]
+\end{align}
 \textbf{Step 2:} Compute $\vec{V}\vec{h} + \vec{u}$
-\[
+\begin{align}
   \vec{V}\vec{h} + \vec{u} = \begin{pmatrix} -4 \\ 0 \end{pmatrix}
-\]
+\end{align}
 \textbf{Step 3:} Compute $\vec{m}^T(\vec{V}\vec{h}+\vec{u})$
-\[
+\begin{align}
   \vec{m}^T(\vec{V}\vec{h}+\vec{u}) = -4
-\]
+\end{align}
 \textbf{Step 4:} Compute $g(\vec{h})$
-\[
+\begin{align}
   g(\vec{h}) = 1
-\]
+\end{align}
 \end{frame}
 
 % Substitute and Final Root
 \begin{frame}{Final Roots}
 \textbf{Step 5:} Substitute into $\kappa$:
-\[
+\begin{align}
   \kappa = \frac{4 \pm \sqrt{16-16}}{16} = \frac{4}{16} = 0.25
-\]
+\end{align}
 \textbf{Step 6:} Intersection point:
-\[
+\begin{align}
   x = h + \kappa m = (0,0) + (0.25)(1,0) = (0.25, 0)
-\]
+\end{align}
 Thus, the quadratic $16x^2 - 8x + 1 = 0$ intersects the x-axis at
-\[
+\begin{align}
   \boxed{x = 0.25}
-\]
+\end{align}
 \end{frame}
       \begin{frame}[fragile]
     \begin{figure}[H]

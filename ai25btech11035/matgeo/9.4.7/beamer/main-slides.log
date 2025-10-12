@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.7.30)  12 OCT 2025 04:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.7.30)  12 OCT 2025 05:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main-slides.tex_
-(./main-slides.tex_
+**main-slides.tex
+(./main-slides.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-01-16>
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
@@ -1108,19 +1108,19 @@ Package caption Info: End \AtBeginDocument code.
  (./main-slides.nav) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 109
+LaTeX Font Info:    Trying to load font information for U+msa on input line 107
 .
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 109
+LaTeX Font Info:    Trying to load font information for U+msb on input line 107
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 109.
+ut line 107.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
@@ -1130,13 +1130,13 @@ thkerncmss.
 
 ]
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 130.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 128.
 
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <8> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 130.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 128.
 
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 130.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 128.
 
  [3
 
@@ -1173,20 +1173,17 @@ Package pdftex.def Info: ../figs/img.png  used on input line 3.
 
 
 (./main-slides.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `main-slides.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26830 strings out of 476091
- 515021 string characters out of 5794081
+ 26829 strings out of 476091
+ 515014 string characters out of 5794081
  1860330 words of memory out of 5000000
  46647 multiletter control sequences out of 15000+600000
  520224 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,131p,406b,596s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,15n,131p,405b,596s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texl
@@ -1196,7 +1193,7 @@ t/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb>
-Output written on main-slides.pdf (9 pages, 121649 bytes).
+Output written on main-slides.pdf (9 pages, 122083 bytes).
 PDF statistics:
  118 PDF objects out of 1000 (max. 8388607)
  80 compressed objects within 1 object stream
