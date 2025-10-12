@@ -113,13 +113,13 @@ if$\vec{A}$ and $\vec{B}$ are points in the plane such that $\dfrac{PA}{PB}=K$(c
  \\
  in other cases we always got a Apollonius circle where the value of k $\neq $1 . 
  for plotting purpose we are taking 
- \begin{align*}
+ \begin{align}
      \vec{A}=\myvec{0\\0}, \vec{B}=\myvec{2\\0}
- \end{align*}
+ \end{align}
   the line is :
- \begin{align*}
+ \begin{align}
      \myvec{1&0}\vec{x}=1.
- \end{align*}
+ \end{align}
      \end{frame}
        \begin{frame}[fragile]
     \begin{figure}[H]

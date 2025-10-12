@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.7.30)  30 SEP 2025 10:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.7.30)  12 OCT 2025 04:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main-slides.tex
-(./main-slides.tex
+**main-slides.tex_
+(./main-slides.tex_
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-01-16>
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
@@ -940,7 +940,11 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count366
 \l__pdf_internal_box=\box127
 )
-(./main-slides.aux)
+(./main-slides.aux
+
+LaTeX Warning: Label `figs' multiply defined.
+
+)
 \openout1 = `main-slides.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
@@ -1144,7 +1148,7 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
 \openout4 = `main-slides.vrb'.
 
  (./main-slides.vrb
-<../figs2/img.png, id=49, 462.528pt x 346.896pt>
+<../figs2/img.png, id=41, 462.528pt x 346.896pt>
 File: ../figs2/img.png Graphic file (type png)
 <use ../figs2/img.png>
 Package pdftex.def Info: ../figs2/img.png  used on input line 3.
@@ -1155,7 +1159,7 @@ Package pdftex.def Info: ../figs2/img.png  used on input line 3.
 \openout4 = `main-slides.vrb'.
 
  (./main-slides.vrb
-<../figs1/img.png, id=58, 462.528pt x 346.896pt>
+<../figs1/img.png, id=50, 462.528pt x 346.896pt>
 File: ../figs1/img.png Graphic file (type png)
 <use ../figs1/img.png>
 Package pdftex.def Info: ../figs1/img.png  used on input line 3.
@@ -1180,45 +1184,31 @@ l.5     \label{figs}
 
  (./main-slides.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `main-slides.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main-slides.out':
-(rerunfilecheck)             Before: 6915A3C9CFAA05027D436585ABD1117C;268
-(rerunfilecheck)             After:  65A763A6E0F28B718309D517F6484606;83.
+Package rerunfilecheck Info: File `main-slides.out' has not changed.
+(rerunfilecheck)             Checksum: 65A763A6E0F28B718309D517F6484606;83.
  ) 
 Here is how much of TeX's memory you used:
- 26835 strings out of 476091
- 514963 string characters out of 5794081
+ 26814 strings out of 476091
+ 514778 string characters out of 5794081
  1858330 words of memory out of 5000000
- 46655 multiletter control sequences out of 15000+600000
+ 46635 multiletter control sequences out of 15000+600000
  520224 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,131p,405b,518s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{Outline0.3} has been referenced but does not exist,
- replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Outline0.2} has been referenced but does not exist,
- replaced by a fixed one
-
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main-slides.pdf (5 pages, 117031 bytes).
+ 128i,15n,131p,406b,518s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb>
+Output written on main-slides.pdf (5 pages, 116755 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
- 71 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 500000)
- 77 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 97 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
