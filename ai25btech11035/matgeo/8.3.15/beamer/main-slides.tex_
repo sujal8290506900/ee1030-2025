@@ -112,16 +112,16 @@ An equilateral triangle is inscribed in the parabola $y^2=4ax$
  \\
  let 
  \\
- \begin{align*}
+ \begin{align}
      \vec{A}=\myvec{0\\0}, \vec{B}=\myvec{x\\y}, \vec{C}=\myvec{x\\-y}
- \end{align*}
+ \end{align}
  both parabola and equilateral triangle are symmetric about x axis  that why the y coordinates of $\vec{B} $and $\vec{C}$ are of different sign .
  \\
-  \begin{align*}
+  \begin{align}
       y^2=4ax 
-  \end{align*}
+  \end{align}
   because the position vector of $\vec{B}$ and $\vec{C}$ lie of the parabola .
-  \begin{align*}
+  \begin{align}
       ||\vec{B}-\vec{A}||^2=||\vec{B}-\vec{C}||^2
       \\
       (\vec{B}-\vec{A})^\top(\vec{B}-\vec{A})=(\vec{B}-\vec{C})^\top(\vec{B}-\vec{C}) .
@@ -129,21 +129,20 @@ An equilateral triangle is inscribed in the parabola $y^2=4ax$
       y^2+x^2=4y^2
       \\
       x=12a.
-  \end{align*}
+  \end{align}
      \end{frame}
      \begin{frame}{Frame Title}
          by replacing the value of x in (1) equation :
 \\
-\begin{align*}
+\begin{align}
     y^2=48a^2
     \\
     y=\sqrt{48}a
-\end{align*}
+\end{align}
 the length of side of equilateral triangle is :
-\begin{align*}
+\begin{align}
     2y=2\sqrt{48}a.
-\end{align*}
-for plotting we are takeing a=1 .
+\end{align}
      \end{frame}
        \begin{frame}[fragile]
     \begin{figure}[H]

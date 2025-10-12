@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.7.30)  30 SEP 2025 11:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.7.30)  12 OCT 2025 04:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main-slides.tex
-(./main-slides.tex
+**main-slides.tex_
+(./main-slides.tex_
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-01-16>
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
@@ -1172,13 +1172,13 @@ Package rerunfilecheck Info: File `main-slides.out' has not changed.
 (rerunfilecheck)             Checksum: 65A763A6E0F28B718309D517F6484606;83.
  ) 
 Here is how much of TeX's memory you used:
- 26804 strings out of 476091
- 514596 string characters out of 5794081
- 1861330 words of memory out of 5000000
+ 26805 strings out of 476091
+ 514599 string characters out of 5794081
+ 1863330 words of memory out of 5000000
  46629 multiletter control sequences out of 15000+600000
  520224 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,131p,405b,518s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,15n,131p,406b,518s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texl
@@ -1188,7 +1188,7 @@ t/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy8.pfb>
-Output written on main-slides.pdf (5 pages, 137812 bytes).
+Output written on main-slides.pdf (5 pages, 138347 bytes).
 PDF statistics:
  100 PDF objects out of 1000 (max. 8388607)
  66 compressed objects within 1 object stream
