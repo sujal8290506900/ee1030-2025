@@ -70,5 +70,5 @@ ax.set_zlim(0, 6)
 # Clean aesthetic
 ax.grid(True, linestyle='--', alpha=0.5)
 ax.legend(loc='upper left')
-
+plt.savefig('../figs/img.png')
 plt.show()
