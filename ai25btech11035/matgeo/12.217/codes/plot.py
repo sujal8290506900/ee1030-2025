@@ -2,35 +2,73 @@ import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
-# Define the vectors from the screenshots
+# === Define the surface function ===
+def F(x, y, z):
+    return x**2 + (y**2)/4 + (z**2)/9
+
+# === Gradient function ===
+def grad_F(x, y, z):
+    return np.array([2*x, y/2, (2*z)/9])
+
+# === Point P ===
 P = np.array([1, 2, 3])
-grad_F = np.array([2, 1, 2/3])
 
-vectors = [P, grad_F]
-labels = [r'$\mathbf{P}$', r'$\nabla F(1,2,3)$']
-colors = ['b', 'r']
+# === Gradient at P ===
+gradP = grad_F(*P)
 
-# Create 3D plot
-fig = plt.figure()
-ax = fig.add_subplot(111, projection='3d')
+# === Unit vector in direction of P (from origin) ===
+u = P / np.linalg.norm(P)
 
-# Plot each vector from origin
-for vec, label, color in zip(vectors, labels, colors):
-    ax.quiver(0, 0, 0, vec[0], vec[1], vec[2], color=color, label=label, arrow_length_ratio=0.1)
+# === Directional derivative ===
+DuF = np.dot(gradP, u)
+proj_vec = DuF * u  # projection of ∇F on u
 
-# Set axis limits for clarity
-ax.set_xlim([0, 3])
-ax.set_ylim([0, 3])
-ax.set_zlim([0, 3])
+# === Print computed values ===
+print("Gradient at P:", gradP)
+print("Unit vector u:", u)
+print("Directional derivative (∇F·u):", DuF)
 
-# Axis labels and title
-ax.set_xlabel('X')
-ax.set_ylabel('Y')
-ax.set_zlabel('Z')
-ax.set_title('3D Plot of $\\mathbf{P}$ and $\\nabla F(1,2,3)$')
+# === Create the figure ===
+fig = plt.figure(figsize=(10, 8))
+ax = fig.add_subplot(111, projection='3d', facecolor='white')
 
-# Show legend and grid
-ax.legend()
-ax.grid(True)
-plt.savefig('../figs/img.png')
+# === Surface grid ===
+x = np.linspace(-3, 3, 60)
+y = np.linspace(-6, 6, 60)
+x, y = np.meshgrid(x, y)
+z = np.sqrt(np.clip(9*(3 - x**2 - (y**2)/4), 0, None))
+
+# === Plot the ellipsoidal surface ===
+ax.plot_surface(x, y, z, alpha=0.25, color='skyblue', edgecolor='none')
+
+# === Plot point P ===
+ax.scatter(*P, color='crimson', s=80, label='Point P(1,2,3)', depthshade=True)
+
+# === Gradient vector (green) ===
+ax.quiver(*P, *gradP, color='limegreen', length=2, normalize=True, arrow_length_ratio=0.2, linewidth=2)
+ax.text(*(P + gradP/3), "∇F", color='green', fontsize=12)
+
+# === Unit direction vector u (orange) ===
+ax.quiver(0, 0, 0, *u, color='darkorange', length=4, normalize=True, arrow_length_ratio=0.2, linewidth=2)
+ax.text(*(u*3.5), "û", color='darkorange', fontsize=12)
+
+# === Projection vector (purple) ===
+ax.quiver(*P, *proj_vec, color='purple', length=2, normalize=False, arrow_length_ratio=0.2, linewidth=2)
+ax.text(*(P + proj_vec*0.5), "Proj(∇F on û)", color='purple', fontsize=11)
+
+# === Styling the 3D plot ===
+ax.set_xlabel('X', fontsize=12)
+ax.set_ylabel('Y', fontsize=12)
+ax.set_zlabel('Z', fontsize=12)
+ax.set_title('Directional Derivative Visualization', fontsize=15, fontweight='bold', pad=20)
+
+# Axis limits
+ax.set_xlim(-3, 3)
+ax.set_ylim(-3, 6)
+ax.set_zlim(0, 6)
+
+# Clean aesthetic
+ax.grid(True, linestyle='--', alpha=0.5)
+ax.legend(loc='upper left')
+
 plt.show()
